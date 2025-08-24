@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Chosen Palette: Warm Neutrals (Stone, Slate, Teal) -->
-    <!-- Application Structure Plan: A single-page vertical scroll application with a sticky navigation bar. The core is an interactive portfolio section with category filters (All, Academic, Sports, Honors) that dynamically display award cards from a JS data object. This structure is user-friendly, allowing for both a quick overview and detailed exploration without complex navigation. A bar chart visualizes language proficiency for quick comparison. -->
-    <!-- Visualization & Content Choices: 1. Key Stats: HTML/CSS cards for immediate impact. 2. Awards List: Interactive grid of cards (HTML/CSS/JS) for detailed organization and filtering. Goal: Organize/Inform. Interaction: Category filtering. Justification: Allows users to focus on specific achievement types. 3. Language Scores: Bar Chart (Chart.js Canvas). Goal: Compare. Interaction: Tooltips. Justification: Clearly compares the two scores against a scale. -->
+    <!-- Application Structure Plan: A single-page vertical scroll application with a sticky navigation bar. The core is an interactive portfolio section with category filters (All, Academic, Sports, Honors) that dynamically display award cards from a JS data object. This structure is user-friendly, allowing for both a quick overview and detailed exploration without complex navigation. A radar chart visualizes IELTS scores for a skill profile. -->
+    <!-- Visualization & Content Choices: 1. Key Stats: HTML/CSS cards for immediate impact. 2. Awards List: Interactive grid of cards (HTML/CSS/JS) for detailed organization and filtering. Goal: Organize/Inform. Interaction: Category filtering. Justification: Allows users to focus on specific achievement types. 3. Language Scores: Radar Chart (Chart.js Canvas) for IELTS sub-scores & styled text for CET. Goal: Compare/Inform. Interaction: Tooltips. Justification: Radar chart effectively shows skill balance. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
@@ -17,16 +17,11 @@
         .chart-container {
             position: relative;
             width: 100%;
-            max-width: 600px;
+            max-width: 450px;
             margin-left: auto;
             margin-right: auto;
-            height: 300px;
+            height: 350px;
             max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
         }
         .nav-link {
             transition: color 0.3s, border-bottom-color 0.3s;
@@ -71,27 +66,32 @@
         <section id="intro" class="text-center mb-20">
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">个人成就交互式概览</h1>
             <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-                欢迎来到我的个人成就展示页。这里汇总了我在学术竞赛、校内荣誉、体育活动及语言能力等方面的成果。您可以通过下方的分类按钮进行筛选，交互式地探索我的经历。
+                欢迎来到我的个人成就展示页。这里汇总了我在学术竞赛、科研项目、校内荣誉、体育活动及语言能力等方面的成果。您可以通过下方的分类按钮进行筛选，交互式地探索我的经历。
             </p>
         </section>
 
         <section id="highlights" class="mb-20">
             <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">核心亮点</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
                     <div class="text-5xl font-extrabold text-teal-600">4</div>
                     <p class="mt-2 text-lg font-medium text-slate-700">项国家级一等奖</p>
                     <p class="text-sm text-slate-500">物理、物联网、编程领域</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
+                    <div class="text-5xl font-extrabold text-teal-600">1</div>
+                    <p class="mt-2 text-lg font-medium text-slate-700">项国家级大创项目</p>
+                    <p class="text-sm text-slate-500">第一主持人，经费1.5万元</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
                     <div class="text-5xl font-extrabold text-teal-600">10+</div>
                     <p class="mt-2 text-lg font-medium text-slate-700">项竞赛类奖项</p>
                     <p class="text-sm text-slate-500">涵盖国家、省、校三级</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md">
-                    <div class="text-5xl font-extrabold text-teal-600">571</div>
-                    <p class="mt-2 text-lg font-medium text-slate-700">大学英语四级 (CET-4)</p>
-                    <p class="text-sm text-slate-500">展现扎实的英语基础</p>
+                <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
+                    <div class="text-5xl font-extrabold text-teal-600">6.0</div>
+                    <p class="mt-2 text-lg font-medium text-slate-700">雅思 (IELTS) 总分</p>
+                    <p class="text-sm text-slate-500">具备国际化语言能力</p>
                 </div>
             </div>
         </section>
@@ -101,7 +101,7 @@
             <p class="text-center text-slate-600 mb-10">点击下方按钮，筛选查看不同类别的成就详情。</p>
             <div id="filters" class="flex justify-center space-x-2 md:space-x-4 mb-12">
                 <button data-filter="all" class="filter-btn bg-teal-600 text-white px-4 py-2 rounded-full font-semibold">全部</button>
-                <button data-filter="academic" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">学术竞赛</button>
+                <button data-filter="academic" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">学术科研</button>
                 <button data-filter="honor" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">荣誉奖学金</button>
                 <button data-filter="sports" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">体育活动</button>
             </div>
@@ -111,10 +111,26 @@
 
         <section id="skills">
             <h2 class="text-3xl font-bold text-center text-slate-900 mb-4">语言能力</h2>
-            <p class="text-center text-slate-600 mb-10">通过全国大学英语四级(CET-4)与六级(CET-6)考试，具备良好的英语读写能力。</p>
-            <div class="bg-white p-6 rounded-xl shadow-md">
-                <div class="chart-container">
-                    <canvas id="languageScoresChart"></canvas>
+            <p class="text-center text-slate-600 mb-10">通过雅思(IELTS)、全国大学英语四级(CET-4)与六级(CET-6)考试，具备扎实、全面的英语沟通能力。</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="font-bold text-center text-lg mb-4 text-slate-800">雅思成绩构成 (IELTS)</h3>
+                    <div class="chart-container">
+                        <canvas id="ieltsChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md h-full flex flex-col justify-center">
+                     <h3 class="font-bold text-center text-lg mb-4 text-slate-800">大学英语考试 (CET)</h3>
+                     <div class="space-y-4">
+                        <div class="text-center">
+                            <p class="text-sm text-slate-500">CET-4 总分</p>
+                            <p class="text-4xl font-bold text-teal-600">571</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-sm text-slate-500">CET-6 总分</p>
+                            <p class="text-4xl font-bold text-teal-600">471</p>
+                        </div>
+                     </div>
                 </div>
             </div>
         </section>
@@ -130,6 +146,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const awardsData = [
+                { category: 'academic', level: '国家级', title: '大学生创新创业训练计划', award: '第一主持人', year: 2025, description: '主持国家级大创项目《深度学习驱动的多模态医学影像肿瘤早期识别与辅助诊疗决策技术研究》，项目经费15000元。' },
                 { category: 'academic', level: '国家级', title: '全国大学生物理实验竞赛', award: '一等奖', year: 2024, description: '在2024年第十届全国大学生物理实验竞赛中荣获此奖项。' },
                 { category: 'academic', level: '国家级', title: '全国大学生物联网创新挑战赛', award: '一等奖', year: 2024, description: '在2024年第四届赛事编程赛道中荣获一等奖。' },
                 { category: 'academic', level: '国家级', title: '大学生信息系统创新大赛', award: '一等奖', year: 2024, description: '“开发者”算法编程挑战赛Java赛道本科B组初赛。' },
@@ -159,7 +176,7 @@
             };
             
             const categoryIcons = {
-                'academic': '🏆',
+                'academic': '🔬',
                 'honor': '⭐',
                 'sports': '🏃'
             };
@@ -207,36 +224,45 @@
 
             renderAwards();
 
-            const ctx = document.getElementById('languageScoresChart').getContext('2d');
-            const languageScoresChart = new Chart(ctx, {
-                type: 'bar',
+            const ieltsCtx = document.getElementById('ieltsChart').getContext('2d');
+            const ieltsChart = new Chart(ieltsCtx, {
+                type: 'radar',
                 data: {
-                    labels: ['大学英语四级 (CET-4)', '大学英语六级 (CET-6)'],
+                    labels: ['听力 (Listening)', '阅读 (Reading)', '写作 (Writing)', '口语 (Speaking)'],
                     datasets: [{
-                        label: '总分',
-                        data: [571, 471],
-                        backgroundColor: [
-                            'rgba(20, 184, 166, 0.6)',
-                            'rgba(15, 118, 110, 0.6)'
-                        ],
-                        borderColor: [
-                            'rgb(13, 148, 136)',
-                            'rgb(15, 118, 110)'
-                        ],
-                        borderWidth: 1
+                        label: 'IELTS 分数',
+                        data: [5.5, 6.0, 6.0, 6.0],
+                        fill: true,
+                        backgroundColor: 'rgba(20, 184, 166, 0.2)',
+                        borderColor: 'rgb(13, 148, 136)',
+                        pointBackgroundColor: 'rgb(13, 148, 136)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(13, 148, 136)'
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    indexAxis: 'y',
                     scales: {
-                        x: {
-                            beginAtZero: true,
-                            max: 710,
-                            title: {
-                                display: true,
-                                text: '分数 (满分 710)'
+                        r: {
+                            angleLines: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 12
+                                },
+                                color: '#334155'
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 9,
+                            ticks: {
+                                stepSize: 1,
+                                backdropColor: 'rgba(255, 255, 255, 0.75)'
                             }
                         }
                     },
@@ -245,7 +271,7 @@
                             display: false
                         },
                         tooltip: {
-                            callbacks: {
+                             callbacks: {
                                 label: function(context) {
                                     return `分数: ${context.raw}`;
                                 }
