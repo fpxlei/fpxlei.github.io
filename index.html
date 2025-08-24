@@ -7,8 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Chosen Palette: Warm Neutrals (Stone, Slate, Teal) -->
-    <!-- Application Structure Plan: A single-page vertical scroll application with a sticky navigation bar. The core is an interactive portfolio section with category filters (All, Academic, Sports, Honors) that dynamically display award cards from a JS data object. This structure is user-friendly, allowing for both a quick overview and detailed exploration without complex navigation. A radar chart visualizes IELTS scores for a skill profile. -->
-    <!-- Visualization & Content Choices: 1. Key Stats: HTML/CSS cards for immediate impact. 2. Awards List: Interactive grid of cards (HTML/CSS/JS) for detailed organization and filtering. Goal: Organize/Inform. Interaction: Category filtering. Justification: Allows users to focus on specific achievement types. 3. Language Scores: Radar Chart (Chart.js Canvas) for IELTS sub-scores & styled text for CET. Goal: Compare/Inform. Interaction: Tooltips. Justification: Radar chart effectively shows skill balance. -->
+    <!-- Application Structure Plan: A single-page vertical scroll application with a sticky navigation bar and a language toggle. The core is an interactive portfolio section with category filters that dynamically display award cards from a bilingual JS data object. This structure is user-friendly, allowing for both a quick overview and detailed exploration without complex navigation. A radar chart visualizes IELTS scores, also with bilingual labels. -->
+    <!-- Visualization & Content Choices: 1. Key Stats: Bilingual HTML/CSS cards. 2. Awards List: Interactive grid of cards (HTML/CSS/JS) with bilingual content and filters. Goal: Organize/Inform. Interaction: Category filtering, language switching. Justification: Caters to both Chinese and English-speaking audiences. 3. Language Scores: Radar Chart (Chart.js Canvas) for IELTS sub-scores & styled text for CET. Goal: Compare/Inform. Interaction: Tooltips, language switching. Justification: Radar chart effectively shows skill balance, now fully translatable. -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
@@ -40,6 +40,17 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
+        #lang-toggle {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #lang-toggle:hover {
+            background-color: #f1f5f9;
+        }
     </style>
 </head>
 <body class="bg-stone-50 text-slate-800">
@@ -48,13 +59,18 @@
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <span class="font-bold text-xl text-slate-900">刘磊 | 成就概览</span>
+                    <span class="font-bold text-xl text-slate-900" data-lang-key="headerTitle">刘磊 | 成就概览</span>
                 </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#highlights" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700">核心亮点</a>
-                        <a href="#achievements" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700">成就列表</a>
-                        <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700">语言能力</a>
+                <div class="flex items-center">
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#highlights" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700" data-lang-key="navHighlights">核心亮点</a>
+                            <a href="#achievements" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700" data-lang-key="navAchievements">成就列表</a>
+                            <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700" data-lang-key="navSkills">语言能力</a>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <button id="lang-toggle" class="text-sm">English</button>
                     </div>
                 </div>
             </div>
@@ -64,70 +80,70 @@
     <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         
         <section id="intro" class="text-center mb-20">
-            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">个人成就交互式概览</h1>
-            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight" data-lang-key="mainTitle">个人成就交互式概览</h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600" data-lang-key="introParagraph">
                 欢迎来到我的个人成就展示页。这里汇总了我在学术竞赛、科研项目、校内荣誉、体育活动及语言能力等方面的成果。您可以通过下方的分类按钮进行筛选，交互式地探索我的经历。
             </p>
         </section>
 
         <section id="highlights" class="mb-20">
-            <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">核心亮点</h2>
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-10" data-lang-key="highlightsTitle">核心亮点</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
                 <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
                     <div class="text-5xl font-extrabold text-teal-600">4</div>
-                    <p class="mt-2 text-lg font-medium text-slate-700">项国家级一等奖</p>
-                    <p class="text-sm text-slate-500">物理、物联网、编程领域</p>
+                    <p class="mt-2 text-lg font-medium text-slate-700" data-lang-key="highlight1Title">项国家级一等奖</p>
+                    <p class="text-sm text-slate-500" data-lang-key="highlight1Desc">物理、物联网、编程领域</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
                     <div class="text-5xl font-extrabold text-teal-600">1</div>
-                    <p class="mt-2 text-lg font-medium text-slate-700">项国家级大创项目</p>
-                    <p class="text-sm text-slate-500">第一主持人，经费1.5万元</p>
+                    <p class="mt-2 text-lg font-medium text-slate-700" data-lang-key="highlight2Title">项国家级大创项目</p>
+                    <p class="text-sm text-slate-500" data-lang-key="highlight2Desc">第一主持人，经费1.5万元</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
                     <div class="text-5xl font-extrabold text-teal-600">10+</div>
-                    <p class="mt-2 text-lg font-medium text-slate-700">项竞赛类奖项</p>
-                    <p class="text-sm text-slate-500">涵盖国家、省、校三级</p>
+                    <p class="mt-2 text-lg font-medium text-slate-700" data-lang-key="highlight3Title">项竞赛类奖项</p>
+                    <p class="text-sm text-slate-500" data-lang-key="highlight3Desc">涵盖国家、省、校三级</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md flex flex-col justify-center">
                     <div class="text-5xl font-extrabold text-teal-600">6.0</div>
-                    <p class="mt-2 text-lg font-medium text-slate-700">雅思 (IELTS) 总分</p>
-                    <p class="text-sm text-slate-500">具备国际化语言能力</p>
+                    <p class="mt-2 text-lg font-medium text-slate-700" data-lang-key="highlight4Title">雅思 (IELTS) 总分</p>
+                    <p class="text-sm text-slate-500" data-lang-key="highlight4Desc">具备国际化语言能力</p>
                 </div>
             </div>
         </section>
 
         <section id="achievements" class="mb-20">
-            <h2 class="text-3xl font-bold text-center text-slate-900 mb-4">成就列表</h2>
-            <p class="text-center text-slate-600 mb-10">点击下方按钮，筛选查看不同类别的成就详情。</p>
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-4" data-lang-key="achievementsTitle">成就列表</h2>
+            <p class="text-center text-slate-600 mb-10" data-lang-key="achievementsDesc">点击下方按钮，筛选查看不同类别的成就详情。</p>
             <div id="filters" class="flex justify-center space-x-2 md:space-x-4 mb-12">
-                <button data-filter="all" class="filter-btn bg-teal-600 text-white px-4 py-2 rounded-full font-semibold">全部</button>
-                <button data-filter="academic" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">学术科研</button>
-                <button data-filter="honor" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">荣誉奖学金</button>
-                <button data-filter="sports" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">体育活动</button>
+                <button data-filter="all" class="filter-btn bg-teal-600 text-white px-4 py-2 rounded-full font-semibold" data-lang-key="filterAll">全部</button>
+                <button data-filter="academic" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50" data-lang-key="filterAcademic">学术科研</button>
+                <button data-filter="honor" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50" data-lang-key="filterHonor">荣誉奖学金</button>
+                <button data-filter="sports" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50" data-lang-key="filterSports">体育活动</button>
             </div>
             <div id="awards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             </div>
         </section>
 
         <section id="skills">
-            <h2 class="text-3xl font-bold text-center text-slate-900 mb-4">语言能力</h2>
-            <p class="text-center text-slate-600 mb-10">通过雅思(IELTS)、全国大学英语四级(CET-4)与六级(CET-6)考试，具备扎实、全面的英语沟通能力。</p>
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-4" data-lang-key="skillsTitle">语言能力</h2>
+            <p class="text-center text-slate-600 mb-10" data-lang-key="skillsDesc">通过雅思(IELTS)、全国大学英语四级(CET-4)与六级(CET-6)考试，具备扎实、全面的英语沟通能力。</p>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="bg-white p-6 rounded-xl shadow-md">
-                    <h3 class="font-bold text-center text-lg mb-4 text-slate-800">雅思成绩构成 (IELTS)</h3>
+                    <h3 class="font-bold text-center text-lg mb-4 text-slate-800" data-lang-key="ieltsTitle">雅思成绩构成 (IELTS)</h3>
                     <div class="chart-container">
                         <canvas id="ieltsChart"></canvas>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-md h-full flex flex-col justify-center">
-                     <h3 class="font-bold text-center text-lg mb-4 text-slate-800">大学英语考试 (CET)</h3>
+                     <h3 class="font-bold text-center text-lg mb-4 text-slate-800" data-lang-key="cetTitle">大学英语考试 (CET)</h3>
                      <div class="space-y-4">
                         <div class="text-center">
-                            <p class="text-sm text-slate-500">CET-4 总分</p>
+                            <p class="text-sm text-slate-500" data-lang-key="cet4Label">CET-4 总分</p>
                             <p class="text-4xl font-bold text-teal-600">571</p>
                         </div>
                         <div class="text-center">
-                            <p class="text-sm text-slate-500">CET-6 总分</p>
+                            <p class="text-sm text-slate-500" data-lang-key="cet6Label">CET-6 总分</p>
                             <p class="text-4xl font-bold text-teal-600">471</p>
                         </div>
                      </div>
@@ -139,58 +155,143 @@
 
     <footer class="bg-white mt-20 border-t border-slate-200">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-slate-500">
-            <p>&copy; 2025 刘磊 | 个人成就展示</p>
+            <p data-lang-key="footerText">&copy; 2025 刘磊 | 个人成就展示</p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+
+            const langData = {
+                zh: {
+                    headerTitle: "刘磊 | 成就概览",
+                    navHighlights: "核心亮点",
+                    navAchievements: "成就列表",
+                    navSkills: "语言能力",
+                    mainTitle: "个人成就交互式概览",
+                    introParagraph: "欢迎来到我的个人成就展示页。这里汇总了我在学术竞赛、科研项目、校内荣誉、体育活动及语言能力等方面的成果。您可以通过下方的分类按钮进行筛选，交互式地探索我的经历。",
+                    highlightsTitle: "核心亮点",
+                    highlight1Title: "项国家级一等奖",
+                    highlight1Desc: "物理、物联网、编程领域",
+                    highlight2Title: "项国家级大创项目",
+                    highlight2Desc: "第一主持人，经费1.5万元",
+                    highlight3Title: "项竞赛类奖项",
+                    highlight3Desc: "涵盖国家、省、校三级",
+                    highlight4Title: "雅思 (IELTS) 总分",
+                    highlight4Desc: "具备国际化语言能力",
+                    achievementsTitle: "成就列表",
+                    achievementsDesc: "点击下方按钮，筛选查看不同类别的成就详情。",
+                    filterAll: "全部",
+                    filterAcademic: "学术科研",
+                    filterHonor: "荣誉奖学金",
+                    filterSports: "体育活动",
+                    skillsTitle: "语言能力",
+                    skillsDesc: "通过雅思(IELTS)、全国大学英语四级(CET-4)与六级(CET-6)考试，具备扎实、全面的英语沟通能力。",
+                    ieltsTitle: "雅思成绩构成 (IELTS)",
+                    cetTitle: "大学英语考试 (CET)",
+                    cet4Label: "CET-4 总分",
+                    cet6Label: "CET-6 总分",
+                    footerText: "© 2025 刘磊 | 个人成就展示",
+                    ieltsLabels: ['听力 (Listening)', '阅读 (Reading)', '写作 (Writing)', '口语 (Speaking)'],
+                    ieltsDatasetLabel: 'IELTS 分数',
+                },
+                en: {
+                    headerTitle: "Liu Lei | Accomplishments",
+                    navHighlights: "Highlights",
+                    navAchievements: "Achievements",
+                    navSkills: "Skills",
+                    mainTitle: "Interactive Overview of Accomplishments",
+                    introParagraph: "Welcome to my personal accomplishments portfolio. This page summarizes my achievements in academic competitions, research projects, university honors, sports, and language proficiency. You can interactively explore my experience by using the category filters below.",
+                    highlightsTitle: "Key Highlights",
+                    highlight1Title: "National First Prizes",
+                    highlight1Desc: "In Physics, IoT, and Programming",
+                    highlight2Title: "National Research Project",
+                    highlight2Desc: "Principal Investigator, ¥15,000 Fund",
+                    highlight3Title: "Competition Awards",
+                    highlight3Desc: "Spanning National, Provincial, and University levels",
+                    highlight4Title: "IELTS Overall Score",
+                    highlight4Desc: "Demonstrating global language proficiency",
+                    achievementsTitle: "List of Achievements",
+                    achievementsDesc: "Click the buttons below to filter and view details of different categories.",
+                    filterAll: "All",
+                    filterAcademic: "Academic & Research",
+                    filterHonor: "Honors & Scholarships",
+                    filterSports: "Athletics",
+                    skillsTitle: "Language Proficiency",
+                    skillsDesc: "Possess solid and comprehensive English communication skills, verified by IELTS, CET-4, and CET-6 scores.",
+                    ieltsTitle: "IELTS Score Breakdown",
+                    cetTitle: "College English Test (CET)",
+                    cet4Label: "CET-4 Overall Score",
+                    cet6Label: "CET-6 Overall Score",
+                    footerText: "© 2025 Liu Lei | Portfolio of Accomplishments",
+                    ieltsLabels: ['Listening', 'Reading', 'Writing', 'Speaking'],
+                    ieltsDatasetLabel: 'IELTS Score',
+                }
+            };
+
             const awardsData = [
-                { category: 'academic', level: '国家级', title: '大学生创新创业训练计划', award: '第一主持人', year: 2025, description: '主持国家级大创项目《深度学习驱动的多模态医学影像肿瘤早期识别与辅助诊疗决策技术研究》，项目经费15000元。' },
-                { category: 'academic', level: '国家级', title: '全国大学生物理实验竞赛', award: '一等奖', year: 2024, description: '在2024年第十届全国大学生物理实验竞赛中荣获此奖项。' },
-                { category: 'academic', level: '国家级', title: '全国大学生物联网创新挑战赛', award: '一等奖', year: 2024, description: '在2024年第四届赛事编程赛道中荣获一等奖。' },
-                { category: 'academic', level: '国家级', title: '大学生信息系统创新大赛', award: '一等奖', year: 2024, description: '“开发者”算法编程挑战赛Java赛道本科B组初赛。' },
-                { category: 'academic', level: '国家级', title: '全国大学生奥林匹克数学竞赛', award: '银奖', year: 2024, description: '在第三届夏季赛中荣获数学类银奖。' },
-                { category: 'academic', level: '国家级', title: '全国大学生统计建模大赛', award: '晋级国赛', year: 2025, description: '代表江苏赛区晋级2025年（第十一届）全国总决赛。' },
-                { category: 'academic', level: '省级', title: '全国大学生统计建模大赛', award: '一等奖', year: 2025, description: '在2025年（第十一届）江苏赛区选拔赛中荣获本科生组一等奖。' },
-                { category: 'academic', level: '省级', title: '全国大学生统计建模大赛', award: '二等奖', year: 2024, description: '在2024年（第十届）江苏赛区选拔赛中荣获本科生组二等奖。' },
-                { category: 'academic', level: '校级', title: '江苏大学计算机设计大赛', award: '二等奖', year: 2025, description: '在第七届校内竞赛中，作品《双缝实验的前世今生》荣获二等奖。' },
-                { category: 'honor', level: '校级', title: '“读懂中国”征文比赛', award: '优秀征文奖', year: 2024, description: '由江苏大学关工委组织的征文比赛。' },
-                { category: 'honor', level: '校级', title: '三好学生', award: '荣誉称号', year: 2024, description: '因2023-2024学年学习成绩优异，综合素质全面被授予此称号。' },
-                { category: 'honor', level: '校级', title: '学习优秀奖学金', award: '二等奖', year: 2024, description: '因2023-2024学年学习成绩优异荣获。' },
-                { category: 'honor', level: '校级', title: '阿卡迪亚特别奖学金', award: '申请资格', year: 2025, description: '作为江苏大学国际班学生，获得申请2025年秋季学期特别奖学金的资格。' },
-                { category: 'sports', level: '校级', title: '校运会 4x400米接力', award: '第二名', year: 2024, description: '在第二十三届校运会中取得男子组第二名。' },
-                { category: 'sports', level: '校级', title: '校运会 400米', award: '第三名', year: 2024, description: '在第二十三届校运会中取得男子组第三名。' },
-                { category: 'sports', level: '校级', title: '校运会 4x100米接力', award: '第五名', year: 2024, description: '在第二十三届校运会中取得男子组第五名。' },
-                { category: 'sports', level: '校级', title: '校运会 4x100米接力', award: '第二名', year: 2023, description: '在第二十二届校运会中取得男子组第二名。' },
-                { category: 'sports', level: '校级', title: '校运会 400米', award: '第六名', year: 2023, description: '在第二十二届校运会中取得男子组第六名。' },
+                { category: 'academic', icon: '🔬', zh: { level: '国家级', title: '大学生创新创业训练计划', award: '第一主持人', year: 2025, description: '主持国家级大创项目《深度学习驱动的多模态医学影像肿瘤早期识别与辅助诊疗决策技术研究》，项目经费15000元。' }, en: { level: 'National', title: 'National Innovation and Entrepreneurship Training Program', award: 'Principal Investigator', year: 2025, description: 'Led the national-level research project on "Early Tumor Recognition in Multimodal Medical Imaging Driven by Deep Learning", with a project fund of ¥15,000.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '国家级', title: '全国大学生物理实验竞赛', award: '一等奖', year: 2024, description: '在2024年第十届全国大学生物理实验竞赛中荣获此奖项。' }, en: { level: 'National', title: 'National College Student Physics Experiment Competition', award: 'First Prize', year: 2024, description: 'Awarded in the 10th National College Student Physics Experiment Competition in 2024.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '国家级', title: '全国大学生物联网创新挑战赛', award: '一等奖', year: 2024, description: '在2024年第四届赛事编程赛道中荣获一等奖。' }, en: { level: 'National', title: 'National University Student IoT Innovation Challenge', award: 'First Prize', year: 2024, description: 'Won First Prize in the programming track of the 4th competition in 2024.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '国家级', title: '大学生信息系统创新大赛', award: '一等奖', year: 2024, description: '“开发者”算法编程挑战赛Java赛道本科B组初赛。' }, en: { level: 'National', title: 'University Student Information System Innovation Competition', award: 'First Prize', year: 2024, description: 'Awarded in the "Developer" Algorithm Programming Challenge (Java Track, Undergraduate Group B).' } },
+                { category: 'academic', icon: '🔬', zh: { level: '国家级', title: '全国大学生奥林匹克数学竞赛', award: '银奖', year: 2024, description: '在第三届夏季赛中荣获数学类银奖。' }, en: { level: 'National', title: 'National College Students\' Olympic Mathematics Competition', award: 'Silver Award', year: 2024, description: 'Received the Silver Award in the Mathematics Category of the 3rd Summer Competition.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '国家级', title: '全国大学生统计建模大赛', award: '晋级国赛', year: 2025, description: '代表江苏赛区晋级2025年（第十一届）全国总决赛。' }, en: { level: 'National', title: 'National College Student Statistical Modeling Competition', award: 'Advanced to National Final', year: 2025, description: 'Represented the Jiangsu Division to advance to the 11th National Final in 2025.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '省级', title: '全国大学生统计建模大赛', award: '一等奖', year: 2025, description: '在2025年（第十一届）江苏赛区选拔赛中荣获本科生组一等奖。' }, en: { level: 'Provincial', title: 'National College Student Statistical Modeling Competition', award: 'First Prize', year: 2025, description: 'Won First Prize in the undergraduate group of the 11th Jiangsu Division qualifier in 2025.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '省级', title: '全国大学生统计建模大赛', award: '二等奖', year: 2024, description: '在2024年（第十届）江苏赛区选拔赛中荣获本科生组二等奖。' }, en: { level: 'Provincial', title: 'National College Student Statistical Modeling Competition', award: 'Second Prize', year: 2024, description: 'Won Second Prize in the undergraduate group of the 10th Jiangsu Division qualifier in 2024.' } },
+                { category: 'academic', icon: '🔬', zh: { level: '校级', title: '江苏大学计算机设计大赛', award: '二等奖', year: 2025, description: '在第七届校内竞赛中，作品《双缝实验的前世今生》荣获二等奖。' }, en: { level: 'University', title: 'Jiangsu University Computer Design Competition', award: 'Second Prize', year: 2025, description: 'The project "The Past and Present of the Double-Slit Experiment" won Second Prize in the 7th university competition.' } },
+                { category: 'honor', icon: '⭐', zh: { level: '校级', title: '阿卡迪亚大学学金', award: '一等奖', year: 2025, description: '因优异的学术表现与综合能力，荣获阿卡迪亚大学提供的一等奖学金。' }, en: { level: 'University', title: 'Arcadia University First-Class Scholarship', award: 'Awarded', year: 2025, description: 'Awarded the First-Class Scholarship from Arcadia University for excellent academic performance and comprehensive abilities.' } },
+                { category: 'honor', icon: '⭐', zh: { level: '校级', title: '三好学生', award: '荣誉称号', year: 2024, description: '因2023-2024学年学习成绩优异，综合素质全面被授予此称号。' }, en: { level: 'University', title: '"Sanhao" (Triple-A) Student', award: 'Honorary Title', year: 2024, description: 'Awarded for outstanding academic performance and comprehensive qualities during the 2023-2024 academic year.' } },
+                { category: 'honor', icon: '⭐', zh: { level: '校级', title: '学习优秀奖学金', award: '二等奖', year: 2024, description: '因2023-2024学年学习成绩优异荣获。' }, en: { level: 'University', title: 'Scholarship for Academic Excellence', award: 'Second Prize', year: 2024, description: 'Received for excellent academic achievements in the 2023-2024 academic year.' } },
+                { category: 'honor', icon: '⭐', zh: { level: '校级', title: '“读懂中国”征文比赛', award: '优秀征文奖', year: 2024, description: '由江苏大学关工委组织的征文比赛。' }, en: { level: 'University', title: '"Understanding China" Essay Competition', award: 'Excellent Paper Award', year: 2024, description: 'An essay competition organized by the university\'s working committee.' } },
+                { category: 'sports', icon: '🏃', zh: { level: '校级', title: '校运会 4x400米接力', award: '第二名', year: 2024, description: '在第二十三届校运会中取得男子组第二名。' }, en: { level: 'University', title: 'Athletics Meet: 4x400m Relay', award: 'Second Place', year: 2024, description: 'Achieved second place in the men\'s event at the 23rd University Athletics Meet.' } },
+                { category: 'sports', icon: '🏃', zh: { level: '校级', title: '校运会 400米', award: '第三名', year: 2024, description: '在第二十三届校运会中取得男子组第三名。' }, en: { level: 'University', title: 'Athletics Meet: 400m Race', award: 'Third Place', year: 2024, description: 'Achieved third place in the men\'s event at the 23rd University Athletics Meet.' } },
+                { category: 'sports', icon: '🏃', zh: { level: '校级', title: '校运会 4x100米接力', award: '第五名', year: 2024, description: '在第二十三届校运会中取得男子组第五名。' }, en: { level: 'University', title: 'Athletics Meet: 4x100m Relay', award: 'Fifth Place', year: 2024, description: 'Achieved fifth place in the men\'s event at the 23rd University Athletics Meet.' } },
+                { category: 'sports', icon: '🏃', zh: { level: '校级', title: '校运会 4x100米接力', award: '第二名', year: 2023, description: '在第二十二届校运会中取得男子组第二名。' }, en: { level: 'University', title: 'Athletics Meet: 4x100m Relay', award: 'Second Place', year: 2023, description: 'Achieved second place in the men\'s event at the 22nd University Athletics Meet.' } },
+                { category: 'sports', icon: '🏃', zh: { level: '校级', title: '校运会 400米', award: '第六名', year: 2023, description: '在第二十二届校运会中取得男子组第六名。' }, en: { level: 'University', title: 'Athletics Meet: 400m Race', award: 'Sixth Place', year: 2023, description: 'Achieved sixth place in the men\'s event at the 22nd University Athletics Meet.' } },
             ];
 
+            let currentLang = 'zh';
+            let ieltsChart;
             const awardsGrid = document.getElementById('awards-grid');
             const filterButtons = document.querySelectorAll('.filter-btn');
+            const langToggleButton = document.getElementById('lang-toggle');
 
             const levelColors = {
                 '国家级': 'bg-red-100 text-red-800',
                 '省级': 'bg-blue-100 text-blue-800',
-                '校级': 'bg-green-100 text-green-800'
+                '校级': 'bg-green-100 text-green-800',
+                'National': 'bg-red-100 text-red-800',
+                'Provincial': 'bg-blue-100 text-blue-800',
+                'University': 'bg-green-100 text-green-800'
             };
-            
-            const categoryIcons = {
-                'academic': '🔬',
-                'honor': '⭐',
-                'sports': '🏃'
-            };
+
+            function setLanguage(lang) {
+                currentLang = lang;
+                langToggleButton.textContent = lang === 'zh' ? 'English' : '中文';
+                
+                document.querySelectorAll('[data-lang-key]').forEach(el => {
+                    const key = el.dataset.langKey;
+                    if (langData[lang][key]) {
+                        el.textContent = langData[lang][key];
+                    }
+                });
+
+                const activeFilter = document.querySelector('.filter-btn.bg-teal-600').dataset.filter;
+                renderAwards(activeFilter);
+                renderIeltsChart();
+            }
 
             function renderAwards(filter = 'all') {
                 awardsGrid.innerHTML = '';
                 const filteredAwards = filter === 'all' ? awardsData : awardsData.filter(award => award.category === filter);
 
-                filteredAwards.forEach(award => {
+                filteredAwards.forEach(item => {
+                    const award = item[currentLang];
                     const card = `
                         <div class="award-card bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col">
                             <div class="flex-grow">
                                 <div class="flex justify-between items-start">
-                                    <span class="text-3xl">${categoryIcons[award.category]}</span>
+                                    <span class="text-3xl">${item.icon}</span>
                                     <span class="text-xs font-semibold px-2 py-1 rounded-full ${levelColors[award.level]}">${award.level}</span>
                                 </div>
                                 <h3 class="mt-4 text-lg font-bold text-slate-900">${award.title}</h3>
@@ -209,97 +310,52 @@
             filterButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     const filter = button.dataset.filter;
-                    
                     filterButtons.forEach(btn => {
                         btn.classList.remove('bg-teal-600', 'text-white');
                         btn.classList.add('bg-white', 'text-slate-700');
                     });
-                    
                     button.classList.add('bg-teal-600', 'text-white');
                     button.classList.remove('bg-white', 'text-slate-700');
-                    
                     renderAwards(filter);
                 });
             });
 
-            renderAwards();
+            langToggleButton.addEventListener('click', () => {
+                const newLang = currentLang === 'zh' ? 'en' : 'zh';
+                setLanguage(newLang);
+            });
 
-            const ieltsCtx = document.getElementById('ieltsChart').getContext('2d');
-            const ieltsChart = new Chart(ieltsCtx, {
-                type: 'radar',
-                data: {
-                    labels: ['听力 (Listening)', '阅读 (Reading)', '写作 (Writing)', '口语 (Speaking)'],
-                    datasets: [{
-                        label: 'IELTS 分数',
-                        data: [5.5, 6.0, 6.0, 6.0],
-                        fill: true,
-                        backgroundColor: 'rgba(20, 184, 166, 0.2)',
-                        borderColor: 'rgb(13, 148, 136)',
-                        pointBackgroundColor: 'rgb(13, 148, 136)',
-                        pointBorderColor: '#fff',
-                        pointHoverBackgroundColor: '#fff',
-                        pointHoverBorderColor: 'rgb(13, 148, 136)'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        r: {
-                            angleLines: {
-                                color: 'rgba(0, 0, 0, 0.1)'
-                            },
-                            grid: {
-                                color: 'rgba(0, 0, 0, 0.1)'
-                            },
-                            pointLabels: {
-                                font: {
-                                    size: 12
-                                },
-                                color: '#334155'
-                            },
-                            suggestedMin: 0,
-                            suggestedMax: 9,
-                            ticks: {
-                                stepSize: 1,
-                                backdropColor: 'rgba(255, 255, 255, 0.75)'
-                            }
-                        }
-                    },
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                             callbacks: {
-                                label: function(context) {
-                                    return `分数: ${context.raw}`;
-                                }
-                            }
-                        }
-                    }
+            function renderIeltsChart() {
+                const ctx = document.getElementById('ieltsChart').getContext('2d');
+                if(ieltsChart) {
+                    ieltsChart.destroy();
                 }
-            });
-            
-            const navLinks = document.querySelectorAll('.nav-link');
-            const sections = document.querySelectorAll('section');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (pageYOffset >= sectionTop - 80) {
-                        current = section.getAttribute('id');
+                ieltsChart = new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: langData[currentLang].ieltsLabels,
+                        datasets: [{
+                            label: langData[currentLang].ieltsDatasetLabel,
+                            data: [5.5, 6.0, 6.0, 6.0],
+                            fill: true,
+                            backgroundColor: 'rgba(20, 184, 166, 0.2)',
+                            borderColor: 'rgb(13, 148, 136)',
+                            pointBackgroundColor: 'rgb(13, 148, 136)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgb(13, 148, 136)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: { r: { angleLines: { color: 'rgba(0, 0, 0, 0.1)' }, grid: { color: 'rgba(0, 0, 0, 0.1)' }, pointLabels: { font: { size: 12 }, color: '#334155' }, suggestedMin: 0, suggestedMax: 9, ticks: { stepSize: 1, backdropColor: 'rgba(255, 255, 255, 0.75)' } } },
+                        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function(context) { return `${context.dataset.label}: ${context.raw}`;} } } }
                     }
                 });
+            }
 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').includes(current)) {
-                        link.classList.add('active');
-                    }
-                });
-            });
+            setLanguage('zh'); // Initial language setup
         });
     </script>
 </body>
