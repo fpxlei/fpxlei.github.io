@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘磊的个人成就</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chosen Palette: Warm Neutrals (Stone, Slate, Teal) -->
+    <!-- Application Structure Plan: A single-page vertical scroll application with a sticky navigation bar. The core is an interactive portfolio section with category filters (All, Academic, Sports, Honors) that dynamically display award cards from a JS data object. This structure is user-friendly, allowing for both a quick overview and detailed exploration without complex navigation. A bar chart visualizes language proficiency for quick comparison. -->
+    <!-- Visualization & Content Choices: 1. Key Stats: HTML/CSS cards for immediate impact. 2. Awards List: Interactive grid of cards (HTML/CSS/JS) for detailed organization and filtering. Goal: Organize/Inform. Interaction: Category filtering. Justification: Allows users to focus on specific achievement types. 3. Language Scores: Bar Chart (Chart.js Canvas). Goal: Compare. Interaction: Tooltips. Justification: Clearly compares the two scores against a scale. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover {
+            color: #0d9488; /* hover:text-teal-600 */
+        }
+        .nav-link.active {
+            color: #0d9488; /* text-teal-600 */
+            border-bottom: 2px solid #0d9488; /* border-teal-600 */
+        }
+        .award-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-slate-800">
+
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-xl text-slate-900">刘磊 | 成就概览</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#highlights" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700">核心亮点</a>
+                        <a href="#achievements" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700">成就列表</a>
+                        <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-slate-700">语言能力</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        
+        <section id="intro" class="text-center mb-20">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">个人成就交互式概览</h1>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
+                欢迎来到我的个人成就展示页。这里汇总了我在学术竞赛、校内荣誉、体育活动及语言能力等方面的成果。您可以通过下方的分类按钮进行筛选，交互式地探索我的经历。
+            </p>
+        </section>
+
+        <section id="highlights" class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">核心亮点</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-5xl font-extrabold text-teal-600">4</div>
+                    <p class="mt-2 text-lg font-medium text-slate-700">项国家级一等奖</p>
+                    <p class="text-sm text-slate-500">物理、物联网、编程领域</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-5xl font-extrabold text-teal-600">10+</div>
+                    <p class="mt-2 text-lg font-medium text-slate-700">项竞赛类奖项</p>
+                    <p class="text-sm text-slate-500">涵盖国家、省、校三级</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="text-5xl font-extrabold text-teal-600">571</div>
+                    <p class="mt-2 text-lg font-medium text-slate-700">大学英语四级 (CET-4)</p>
+                    <p class="text-sm text-slate-500">展现扎实的英语基础</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="mb-20">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-4">成就列表</h2>
+            <p class="text-center text-slate-600 mb-10">点击下方按钮，筛选查看不同类别的成就详情。</p>
+            <div id="filters" class="flex justify-center space-x-2 md:space-x-4 mb-12">
+                <button data-filter="all" class="filter-btn bg-teal-600 text-white px-4 py-2 rounded-full font-semibold">全部</button>
+                <button data-filter="academic" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">学术竞赛</button>
+                <button data-filter="honor" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">荣誉奖学金</button>
+                <button data-filter="sports" class="filter-btn bg-white text-slate-700 px-4 py-2 rounded-full font-semibold border border-slate-200 hover:bg-teal-50">体育活动</button>
+            </div>
+            <div id="awards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-4">语言能力</h2>
+            <p class="text-center text-slate-600 mb-10">通过全国大学英语四级(CET-4)与六级(CET-6)考试，具备良好的英语读写能力。</p>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+                <div class="chart-container">
+                    <canvas id="languageScoresChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white mt-20 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center text-slate-500">
+            <p>&copy; 2025 刘磊 | 个人成就展示</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const awardsData = [
+                { category: 'academic', level: '国家级', title: '全国大学生物理实验竞赛', award: '一等奖', year: 2024, description: '在2024年第十届全国大学生物理实验竞赛中荣获此奖项。' },
+                { category: 'academic', level: '国家级', title: '全国大学生物联网创新挑战赛', award: '一等奖', year: 2024, description: '在2024年第四届赛事编程赛道中荣获一等奖。' },
+                { category: 'academic', level: '国家级', title: '大学生信息系统创新大赛', award: '一等奖', year: 2024, description: '“开发者”算法编程挑战赛Java赛道本科B组初赛。' },
+                { category: 'academic', level: '国家级', title: '全国大学生奥林匹克数学竞赛', award: '银奖', year: 2024, description: '在第三届夏季赛中荣获数学类银奖。' },
+                { category: 'academic', level: '国家级', title: '全国大学生统计建模大赛', award: '晋级国赛', year: 2025, description: '代表江苏赛区晋级2025年（第十一届）全国总决赛。' },
+                { category: 'academic', level: '省级', title: '全国大学生统计建模大赛', award: '一等奖', year: 2025, description: '在2025年（第十一届）江苏赛区选拔赛中荣获本科生组一等奖。' },
+                { category: 'academic', level: '省级', title: '全国大学生统计建模大赛', award: '二等奖', year: 2024, description: '在2024年（第十届）江苏赛区选拔赛中荣获本科生组二等奖。' },
+                { category: 'academic', level: '校级', title: '江苏大学计算机设计大赛', award: '二等奖', year: 2025, description: '在第七届校内竞赛中，作品《双缝实验的前世今生》荣获二等奖。' },
+                { category: 'honor', level: '校级', title: '“读懂中国”征文比赛', award: '优秀征文奖', year: 2024, description: '由江苏大学关工委组织的征文比赛。' },
+                { category: 'honor', level: '校级', title: '三好学生', award: '荣誉称号', year: 2024, description: '因2023-2024学年学习成绩优异，综合素质全面被授予此称号。' },
+                { category: 'honor', level: '校级', title: '学习优秀奖学金', award: '二等奖', year: 2024, description: '因2023-2024学年学习成绩优异荣获。' },
+                { category: 'honor', level: '校级', title: '阿卡迪亚特别奖学金', award: '申请资格', year: 2025, description: '作为江苏大学国际班学生，获得申请2025年秋季学期特别奖学金的资格。' },
+                { category: 'sports', level: '校级', title: '校运会 4x400米接力', award: '第二名', year: 2024, description: '在第二十三届校运会中取得男子组第二名。' },
+                { category: 'sports', level: '校级', title: '校运会 400米', award: '第三名', year: 2024, description: '在第二十三届校运会中取得男子组第三名。' },
+                { category: 'sports', level: '校级', title: '校运会 4x100米接力', award: '第五名', year: 2024, description: '在第二十三届校运会中取得男子组第五名。' },
+                { category: 'sports', level: '校级', title: '校运会 4x100米接力', award: '第二名', year: 2023, description: '在第二十二届校运会中取得男子组第二名。' },
+                { category: 'sports', level: '校级', title: '校运会 400米', award: '第六名', year: 2023, description: '在第二十二届校运会中取得男子组第六名。' },
+            ];
+
+            const awardsGrid = document.getElementById('awards-grid');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            const levelColors = {
+                '国家级': 'bg-red-100 text-red-800',
+                '省级': 'bg-blue-100 text-blue-800',
+                '校级': 'bg-green-100 text-green-800'
+            };
+            
+            const categoryIcons = {
+                'academic': '🏆',
+                'honor': '⭐',
+                'sports': '🏃'
+            };
+
+            function renderAwards(filter = 'all') {
+                awardsGrid.innerHTML = '';
+                const filteredAwards = filter === 'all' ? awardsData : awardsData.filter(award => award.category === filter);
+
+                filteredAwards.forEach(award => {
+                    const card = `
+                        <div class="award-card bg-white rounded-xl shadow-md overflow-hidden p-6 flex flex-col">
+                            <div class="flex-grow">
+                                <div class="flex justify-between items-start">
+                                    <span class="text-3xl">${categoryIcons[award.category]}</span>
+                                    <span class="text-xs font-semibold px-2 py-1 rounded-full ${levelColors[award.level]}">${award.level}</span>
+                                </div>
+                                <h3 class="mt-4 text-lg font-bold text-slate-900">${award.title}</h3>
+                                <p class="text-teal-600 font-semibold">${award.award}</p>
+                                <p class="mt-2 text-sm text-slate-600">${award.description}</p>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-slate-100 text-right text-xs text-slate-400">
+                                ${award.year}
+                            </div>
+                        </div>
+                    `;
+                    awardsGrid.innerHTML += card;
+                });
+            }
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.dataset.filter;
+                    
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('bg-teal-600', 'text-white');
+                        btn.classList.add('bg-white', 'text-slate-700');
+                    });
+                    
+                    button.classList.add('bg-teal-600', 'text-white');
+                    button.classList.remove('bg-white', 'text-slate-700');
+                    
+                    renderAwards(filter);
+                });
+            });
+
+            renderAwards();
+
+            const ctx = document.getElementById('languageScoresChart').getContext('2d');
+            const languageScoresChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['大学英语四级 (CET-4)', '大学英语六级 (CET-6)'],
+                    datasets: [{
+                        label: '总分',
+                        data: [571, 471],
+                        backgroundColor: [
+                            'rgba(20, 184, 166, 0.6)',
+                            'rgba(15, 118, 110, 0.6)'
+                        ],
+                        borderColor: [
+                            'rgb(13, 148, 136)',
+                            'rgb(15, 118, 110)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 710,
+                            title: {
+                                display: true,
+                                text: '分数 (满分 710)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `分数: ${context.raw}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+            
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 80) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
