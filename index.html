@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
     <style>
-        /* Custom font settings to match academic style */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            color: #24292e;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
             background-color: #fdfdfd;
+            line-height: 1.6;
         }
-        
+
         a {
-            color: #0366d6;
+            color: #0066cc;
             text-decoration: none;
         }
         
@@ -28,79 +28,98 @@
             text-decoration: underline;
         }
 
-        .sidebar-sticky {
-            position: sticky;
-            top: 2rem;
+        /* Sidebar Styling */
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        /* News scroll box similar to the reference */
-        .news-scroll {
+        /* News Box Scrolling */
+        .news-box {
             max-height: 300px;
             overflow-y: auto;
-            border: 1px solid #e1e4e8;
-            padding: 1rem;
-            border-radius: 6px;
-            background-color: #f6f8fa;
+            border: 1px solid #eee;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
         }
 
-        h1, h2, h3 {
-            font-weight: 600;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
+        /* Scrollbar customization */
+        .news-box::-webkit-scrollbar {
+            width: 6px;
+        }
+        .news-box::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+
+        /* Section Headers */
+        h1, h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
             color: #24292e;
         }
         
-        h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
-        h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.4em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+        }
         
-        .paper-title { font-weight: 600; color: #24292e; }
-        .author-list { color: #586069; }
-        .venue { font-style: italic; color: #24292e; }
+        .badge-success { background-color: #28a745; color: white; }
+        .badge-warning { background-color: #ffc107; color: #212529; }
+        .badge-primary { background-color: #007bff; color: white; }
     </style>
 </head>
-<body class="bg-white">
+<body class="bg-stone-50">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div class="flex flex-col md:flex-row gap-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col md:flex-row gap-10">
             
             <div class="w-full md:w-1/4 flex-shrink-0">
-                <div class="sidebar-sticky">
-                    <div class="mb-6">
-                        <img src="https://via.placeholder.com/300x300?text=Lei+Liu" alt="Lei Liu" class="rounded-full shadow-lg w-48 h-48 mx-auto md:w-full md:h-auto border-4 border-white object-cover">
+                <div class="sticky top-10 text-center md:text-left">
+                    <div class="flex justify-center md:justify-start mb-6">
+                        <img src="https://ui-avatars.com/api/?name=Lei+Liu&background=0D8ABC&color=fff&size=200" alt="Lei Liu" class="profile-img">
                     </div>
 
-                    <div class="text-center md:text-left">
-                        <h2 class="text-2xl font-bold text-gray-900 border-none p-0 m-0">Lei Liu (刘磊)</h2>
-                        <p class="text-gray-600 mt-2 text-sm">Undergraduate Researcher</p>
-                        <p class="text-gray-600 text-sm">Jiangsu University / Arcadia University</p>
+                    <h2 class="text-3xl font-bold mb-2 border-none p-0">Lei Liu</h2>
+                    <p class="text-gray-600 mb-1">Undergraduate Researcher</p>
+                    <p class="text-gray-600 text-sm mb-4">Jiangsu University & Arcadia University</p>
+
+                    <div class="flex flex-col gap-2 text-sm text-gray-700">
+                        <a href="mailto:fpxlllei@gmail.com" class="flex items-center gap-3 hover:text-blue-600">
+                            <i class="fas fa-envelope w-5"></i> fpxlllei@gmail.com
+                        </a>
+                        <a href="https://github.com/fpxlei" target="_blank" class="flex items-center gap-3 hover:text-blue-600">
+                            <i class="fab fa-github w-5"></i> github.com/fpxlei
+                        </a>
+                        <a href="https://linkedin.com/in/lliu" target="_blank" class="flex items-center gap-3 hover:text-blue-600">
+                            <i class="fab fa-linkedin w-5"></i> linkedin.com/in/lliu
+                        </a>
+                        <span class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt w-5"></i> Philadelphia, PA
+                        </span>
                     </div>
 
-                    <div class="mt-6 space-y-2 text-sm">
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-envelope w-6 text-center"></i>
-                            <a href="mailto:fpxlllei@gmail.com">fpxlllei@gmail.com</a>
-                        </div>
-                        <div class="flex items-center text-gray-600">
-                            <i class="fab fa-github w-6 text-center"></i>
-                            <a href="https://github.com/fpxlei" target="_blank">github.com/fpxlei</a>
-                        </div>
-                        <div class="flex items-center text-gray-600">
-                            <i class="fab fa-linkedin w-6 text-center"></i>
-                            <a href="https://linkedin.com/in/lliu" target="_blank">linkedin.com/in/lliu</a>
-                        </div>
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-map-marker-alt w-6 text-center"></i>
-                            <span>Philadelphia, PA / Zhenjiang, CN</span>
-                        </div>
-                    </div>
-
-                    <div class="mt-8">
-                        <h3 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2 border-none">Research Interests</h3>
+                    <div class="mt-8 text-left">
+                        <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Research Interests</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">AI Security</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Trustworthy Agents</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">LLMs</span>
-                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Medical Imaging</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">AI Security</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Trustworthy Agents</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">LLM Robustness</span>
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Medical AI</span>
                         </div>
                     </div>
                 </div>
@@ -108,133 +127,163 @@
 
             <div class="w-full md:w-3/4">
                 
-                <section id="about">
-                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
-                        I am currently a senior undergraduate student majoring in Mathematics and Computer Science. I am pursuing a joint degree at <strong>Jiangsu University</strong> and <strong>Arcadia University</strong> (Visiting Exchange).
+                <section id="about" class="mb-10">
+                    <h1 class="text-3xl font-bold text-slate-800">Biography</h1>
+                    <p class="mb-4 text-justify">
+                        I am a third-year undergraduate student majoring in <strong>Mathematics and Computer Science</strong>. I am currently attending <strong>Arcadia University</strong> (Philadelphia, PA) as a visiting exchange student, while enrolled at <strong>Jiangsu University</strong>[cite: 4, 6, 16].
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
-                        My primary research interests lie in <strong>AI Security</strong> and <strong>Trustworthy Agents</strong>. I am dedicated to developing principled defenses against attacks on Large Language Models (LLMs) and enhancing their robustness in agentic workflows. Additionally, leveraging my background in mathematics, I aim to build secure foundation models for high-stakes applications, including biomedicine and autonomous systems.
+                    <p class="mb-4 text-justify">
+                        My research focuses on <strong>AI Security and Trustworthy Agents</strong>. I am dedicated to developing principled defenses against attacks on Large Language Models (LLMs), such as prompt injection, and enhancing the robustness of agentic workflows. Leveraging my background in mathematics, I also work on building secure foundation models for high-stakes applications, including biomedicine and autonomous systems[cite: 50, 51, 52].
                     </p>
-                    <p class="text-lg leading-relaxed text-gray-700">
-                        I am currently working as a Remote Research Intern at <strong>UCSD</strong> and <strong>NTU</strong>.
+                    <p>
+                        I am currently a Remote Research Intern at <strong>UCSD</strong> working on spatial reasoning in AI[cite: 10, 17].
                     </p>
                 </section>
 
-                <section id="news" class="mt-10">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">🔥 News</h2>
-                    <div class="news-scroll">
-                        <ul class="space-y-3 text-sm">
-                            <li class="flex">
-                                <span class="font-bold min-w-[80px] text-red-600">Sept 2025</span>
-                                <span>Joined <strong>University of California, San Diego (UCSD)</strong> as a Remote Research Intern, working on the "Thinking in Space" project.</span>
+                <section id="news" class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                        <span class="text-red-500">🔥</span> News
+                    </h2>
+                    <div class="news-box">
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex gap-4">
+                                <span class="font-bold text-gray-500 min-w-[85px]">Sep. 2025</span>
+                                <span>Joined <strong>University of California, San Diego (UCSD)</strong> as a Remote Research Intern, conducting research on the "Thinking in Space" project[cite: 10, 15].</span>
                             </li>
-                            <li class="flex">
-                                <span class="font-bold min-w-[80px] text-red-600">July 2025</span>
-                                <span>Joined <strong>Nanyang Technological University (NTU)</strong> as a Research Intern, focusing on AI agent security.</span>
+                            <li class="flex gap-4">
+                                <span class="font-bold text-gray-500 min-w-[85px]">July 2025</span>
+                                <span>Joined <strong>Nanyang Technological University (NTU)</strong> as a Research Intern, focusing on GUI agent security and trustworthiness[cite: 19, 20].</span>
                             </li>
-                            <li class="flex">
-                                <span class="font-bold min-w-[80px] text-gray-600">Feb 2025</span>
-                                <span>Selected as <strong>Project Lead</strong> for the National Undergraduate Innovation Program (Fund: ¥15,000).</span>
+                            <li class="flex gap-4">
+                                <span class="font-bold text-gray-500 min-w-[85px]">Feb. 2025</span>
+                                <span>Selected to lead the <strong>National Undergraduate Innovation Program</strong> (Fund: ¥15,000) on Deep Learning-driven Multimodal Medical Imaging[cite: 24, 25].</span>
                             </li>
-                            <li class="flex">
-                                <span class="font-bold min-w-[80px] text-gray-600">2024</span>
-                                <span>Awarded the <strong>National First Prize</strong> in the National Undergraduate Physics Experiment Competition.</span>
+                            <li class="flex gap-4">
+                                <span class="font-bold text-gray-500 min-w-[85px]">2024</span>
+                                <span>Awarded the <strong>National First Prize</strong> in the National Undergraduate Physics Experiment Competition[cite: 39].</span>
+                            </li>
+                            <li class="flex gap-4">
+                                <span class="font-bold text-gray-500 min-w-[85px]">Sept. 2024</span>
+                                <span>Started as an Undergraduate Research Assistant at the Medical School, Jiangsu University[cite: 30].</span>
                             </li>
                         </ul>
                     </div>
                 </section>
 
-                <section id="publications" class="mt-12">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">📝 Selected Publications</h2>
+                <section id="publications" class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                        <span class="text-blue-500">📝</span> Selected Publications
+                    </h2>
                     
                     <div class="space-y-6">
-                        <div class="pl-4 border-l-4 border-gray-200 hover:border-blue-500 transition-colors">
-                            <div class="paper-title text-lg">Adaptive Label Correction for Robust Medical Image Segmentation with Noisy Labels</div>
-                            <div class="author-list mt-1">
-                                C. Qian, K. Han, J. Ding, <strong>L. Liu</strong>, C. Lyu, J. Chen, & Z. Liu.
-                            </div>
-                            <div class="venue mt-1">
-                                <span class="bg-green-100 text-green-800 text-xs px-2 py-0.5 rounded font-semibold border border-green-200">Accepted</span>
-                                IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2026.
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <div class="hidden sm:block w-32 h-20 bg-gray-200 rounded flex-shrink-0"></div> 
+                            <div>
+                                <h3 class="font-bold text-lg leading-tight text-gray-900">
+                                    Learning Sample-level Cross-Modal Imbalances Progressively
+                                </h3>
+                                <div class="text-gray-600 text-sm mt-1">
+                                    C. Qian, K. Han, J. Liu, Z. Yuan, Z. Zhu, <strong>L. Liu</strong>, J. Wang, C. Lyu, J. Chen, & Z. Liu.
+                                </div>
+                                <div class="text-gray-500 text-sm italic mt-1">
+                                    <span class="badge badge-warning mr-2">Under Review</span>
+                                    AAAI Conference on Artificial Intelligence (AAAI), 2026[cite: 45, 46].
+                                </div>
                             </div>
                         </div>
 
-                        <div class="pl-4 border-l-4 border-gray-200 hover:border-blue-500 transition-colors">
-                            <div class="paper-title text-lg">Learning Sample-level Cross-Modal Imbalances Progressively</div>
-                            <div class="author-list mt-1">
-                                C. Qian, K. Han, J. Liu, Z. Yuan, Z. Zhu, <strong>L. Liu</strong>, J. Wang, C. Lyu, J. Chen, & Z. Liu.
-                            </div>
-                            <div class="venue mt-1">
-                                <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded font-semibold border border-yellow-200">Under Review</span>
-                                AAAI Conference on Artificial Intelligence (AAAI), 2026.
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <div class="hidden sm:block w-32 h-20 bg-gray-200 rounded flex-shrink-0"></div>
+                            <div>
+                                <h3 class="font-bold text-lg leading-tight text-gray-900">
+                                    Adaptive Label Correction for Robust Medical Image Segmentation with Noisy Labels
+                                </h3>
+                                <div class="text-gray-600 text-sm mt-1">
+                                    C. Qian, K. Han, J. Ding, <strong>L. Liu</strong>, C. Lyu, J. Chen, & Z. Liu.
+                                </div>
+                                <div class="text-gray-500 text-sm italic mt-1">
+                                    <span class="badge badge-success mr-2">Accepted</span>
+                                    IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2026[cite: 47, 48].
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="education" class="mt-12">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">🎓 Education</h2>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4">
-                            <div class="flex-shrink-0 mt-1"><i class="fas fa-university text-gray-400"></i></div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Arcadia University</h4>
-                                <p class="text-gray-600">B.S. in Mathematics and Computer Science (Visiting Student)</p>
-                                <p class="text-sm text-gray-500">Sept. 2025 - May 2027 | GPA: 4.00/4.00</p>
-                            </div>
-                        </li>
-                        <li class="flex gap-4">
-                            <div class="flex-shrink-0 mt-1"><i class="fas fa-university text-gray-400"></i></div>
-                            <div>
-                                <h4 class="font-bold text-gray-900">Jiangsu University</h4>
-                                <p class="text-gray-600">B.S. in Mathematics</p>
-                                <p class="text-sm text-gray-500">Sept. 2023 - June 2025 | Major GPA: 4.71/5.00 (Rank 1/60)</p>
-                            </div>
-                        </li>
+                <section id="experience" class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                        <span class="text-purple-500">💻</span> Internships & Experience
+                    </h2>
+                    <div class="border-l-2 border-gray-200 ml-3 space-y-8 pl-6 py-2">
+                        
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full border-2 border-white bg-blue-500 ring-4 ring-white"></span>
+                            <h3 class="text-lg font-bold text-gray-900">University of California, San Diego (UCSD)</h3>
+                            <p class="text-sm text-gray-500">Remote Research Intern | Sep. 2025 - Present</p>
+                            <p class="text-gray-700 mt-2 text-sm">
+                                Working on the "Thinking in Space" project, focusing on spatial reasoning in AI. Co-authoring a publication on foundational AI cognitive architectures[cite: 10, 17].
+                            </p>
+                        </div>
+
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full border-2 border-white bg-gray-400 ring-4 ring-white"></span>
+                            <h3 class="text-lg font-bold text-gray-900">Nanyang Technological University (NTU)</h3>
+                            <p class="text-sm text-gray-500">Research Intern | July 2025 - Nov. 2025</p>
+                            <p class="text-gray-700 mt-2 text-sm">
+                                Investigated vulnerabilities in GUI agents and explored robust defense mechanisms to enhance system security[cite: 19, 21].
+                            </p>
+                        </div>
+
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 h-4 w-4 rounded-full border-2 border-white bg-gray-400 ring-4 ring-white"></span>
+                            <h3 class="text-lg font-bold text-gray-900">National Undergraduate Innovation Program</h3>
+                            <p class="text-sm text-gray-500">Student Project Lead | Feb. 2025 - Present</p>
+                            <p class="text-gray-700 mt-2 text-sm">
+                                Leading a national-level funded project (¥15,000) titled "Deep Learning-driven Multimodal Medical Imaging for Early Tumor Recognition"[cite: 24, 26].
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="education" class="mb-12">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                        <span class="text-green-500">🎓</span> Education
+                    </h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                            <h3 class="font-bold text-gray-900">Arcadia University</h3>
+                            <p class="text-sm text-gray-600">Visiting Exchange Student</p>
+                            <p class="text-xs text-gray-500 mt-1">Sept. 2025 - May 2027</p>
+                            <p class="text-sm text-gray-800 mt-2 font-semibold">GPA: 4.00/4.00</p>
+                            <p class="text-xs text-blue-600 mt-1">President Scholarship [cite: 11]</p>
+                        </div>
+                        <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                            <h3 class="font-bold text-gray-900">Jiangsu University</h3>
+                            <p class="text-sm text-gray-600">B.Sc. in Mathematics</p>
+                            <p class="text-xs text-gray-500 mt-1">Sept. 2023 - June 2025</p>
+                            <p class="text-sm text-gray-800 mt-2 font-semibold">Major GPA: 4.71/5.00 (Rank 1/60)</p>
+                            <p class="text-xs text-blue-600 mt-1">National Scholarship [cite: 38]</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="honors" class="mb-20">
+                    <h2 class="text-2xl font-bold text-slate-800 flex items-center gap-2">
+                        <span class="text-yellow-500">🎖</span> Honors & Awards
+                    </h2>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li><i class="fas fa-trophy text-yellow-400 mr-2"></i> <strong>National Scholarship</strong>, Ministry of Education of China (Top 0.2%) [cite: 38]</li>
+                        <li><i class="fas fa-medal text-yellow-400 mr-2"></i> <strong>National First Prize</strong>, National Undergraduate Physics Experiment Competition [cite: 39]</li>
+                        <li><i class="fas fa-medal text-gray-400 mr-2"></i> <strong>National Second Prize</strong>, National University Student Statistical Modeling Competition [cite: 40]</li>
+                        <li><i class="fas fa-award text-blue-400 mr-2"></i> <strong>President Scholarship</strong>, Arcadia University [cite: 11]</li>
                     </ul>
                 </section>
 
-                 <section id="experience" class="mt-12">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">💻 Research Experience</h2>
-                    <ul class="space-y-6">
-                        <li class="relative pl-6 border-l border-gray-200">
-                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-gray-200 rounded-full"></div>
-                            <h4 class="font-bold text-gray-900">Remote Research Intern</h4>
-                            <p class="text-gray-700">University of California, San Diego (UCSD) | <em>Sep. 2025 - Present</em></p>
-                            <p class="text-sm text-gray-600 mt-1">Conducting research on spatial reasoning in AI; Co-authoring a publication on foundational AI cognitive architectures.</p>
-                        </li>
-                        <li class="relative pl-6 border-l border-gray-200">
-                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-gray-200 rounded-full"></div>
-                            <h4 class="font-bold text-gray-900">Research Intern</h4>
-                            <p class="text-gray-700">Nanyang Technological University (NTU) | <em>July 2025 - Nov. 2025</em></p>
-                            <p class="text-sm text-gray-600 mt-1">Researched security and trustworthiness of AI agents interacting with Graphical User Interfaces (GUI).</p>
-                        </li>
-                        <li class="relative pl-6 border-l border-gray-200">
-                            <div class="absolute -left-1.5 top-1.5 w-3 h-3 bg-gray-200 rounded-full"></div>
-                            <h4 class="font-bold text-gray-900">Student Project Lead</h4>
-                            <p class="text-gray-700">National Undergraduate Innovation Program | <em>Feb. 2025 - Present</em></p>
-                            <p class="text-sm text-gray-600 mt-1">Leading a national-level funded project on deep learning-driven multimodal medical imaging.</p>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="honors" class="mt-12 mb-20">
-                    <h2 class="text-2xl font-bold text-gray-900 mb-6">🎖 Honors & Awards</h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        [cite_start]<li><strong>National Scholarship</strong> (Top 0.2%), Ministry of Education of China[cite: 38].</li>
-                        [cite_start]<li><strong>National First Prize</strong>, National Undergraduate Physics Experiment Competition[cite: 39].</li>
-                        [cite_start]<li><strong>National Second Prize</strong>, National University Student Statistical Modeling Competition[cite: 40].</li>
-                        [cite_start]<li><strong>President Scholarship</strong>, Arcadia University[cite: 11].</li>
-                    </ul>
-                </section>
-
-                <footer class="border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
-                    <p>&copy; 2025 Lei Liu. Powered by <a href="https://tailwindcss.com" class="hover:text-blue-600">Tailwind CSS</a>.</p>
+                <footer class="text-center text-gray-400 text-xs py-10 border-t">
+                    <p>© 2025 Lei Liu. Theme inspired by academicpages.</p>
                 </footer>
-
             </div>
         </div>
     </div>
-
 </body>
 </html>
