@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Lei Liu"
 description              : "Uncertainty quantification & LLM agents for clinical and biomedical applications."
-repository               : "fpxlei/leiliu.github.io"
+repository               : "fpxlei/fpxlei.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
