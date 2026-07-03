@@ -50,14 +50,15 @@ You can find my work on [Google Scholar](https://scholar.google.com/citations?us
 </div>
 
 # 🎖 Honors and Awards
+- *2025* Arcadia University President's Scholarship ($56,000 total)
 - *2025* National Second Prize, National University Student Statistical Modeling Competition
 - *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
 - *2024* National First Prize, National Undergraduate Physics Experiment Competition
 
 # 📖 Education
-- *Sep 2025 – May 2027*, **Arcadia University** — B.S. in Mathematics and Computer Science. *President's Scholarship ($56,000 total) · GPA 3.98/4.00*
-- *Sep 2023 – Jun 2025*, **Jiangsu University** — B.S. in Mathematics and Applied Mathematics. *GPA 4.33/5.00*
+- *Sep 2025 – May 2027*, **Arcadia University** — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
 - *Jul 2026 – Aug 2026*, **Peking University** (Summer School) — *Large Model: From Basic to Practice*, taught by Prof. Tiejun Huang
+- *Sep 2023 – Jun 2025*, **Jiangsu University** — B.S. in Mathematics and Applied Mathematics. *GPA 4.33/5.00*
 
 # 🔬 Research Experience
 - *May 2026 – Present*, **Summer Research Intern**, Yale University, New Haven, CT. *Advised by Prof. Hongyu Zhao; mentored by Dr. Tianyu Liu.*
