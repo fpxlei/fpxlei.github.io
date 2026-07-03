@@ -23,7 +23,7 @@ You can find my work on [Google Scholar](https://scholar.google.com/citations?us
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](#)
@@ -36,7 +36,7 @@ You can find my work on [Google Scholar](https://scholar.google.com/citations?us
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG](#)
