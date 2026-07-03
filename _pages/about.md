@@ -14,7 +14,7 @@ Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** pursuing a doub
 
 More broadly, I'm interested in **agentic memory** and **test-time learning**: how agents organize, update, and adapt from experience over time.
 
-I'm fortunate to be advised by **Prof. Xiao Luo** (University of Wisconsin–Madison), **Prof. Hongyu Zhao** (Yale University), and **Dr. Tianyu Liu** (Yale University). **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
+I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) (University of Wisconsin–Madison), [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) (Yale University), and [**Dr. Tianyu Liu**](https://helloworldlty.github.io/) (Yale University). **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 You can find my work on [Google Scholar](https://scholar.google.com/citations?user=2mfzTK0AAAAJ&hl), [GitHub](https://github.com/fpxlei), and [LinkedIn](https://www.linkedin.com/in/lliu).
 
