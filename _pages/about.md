@@ -47,13 +47,15 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 </div>
 </div>
 
-# 🎖 Honors and Awards
-- *2025* Arcadia University President's Scholarship ($56,000 total)
-- *2025* National Second Prize, National University Student Statistical Modeling Competition
-- *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
-- *2024* National First Prize, National Undergraduate Physics Experiment Competition
-
 # 📖 Education
 - *Sep 2025 – May 2027*, **Arcadia University** — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
 - *Jul 2026 – Aug 2026*, **Peking University** (Summer School) — *Large Model: From Basic to Practice*, taught by Prof. Tiejun Huang
 - *Sep 2023 – Jun 2025*, **Jiangsu University** — B.S. in Mathematics and Applied Mathematics. *GPA 4.34/5.00*
+
+# 🎖 Honors and Awards
+- *2025* Arcadia University President's Scholarship ($56,000 total)
+- *2025* National Second Prize, National University Student Statistical Modeling Competition (top 268 in 30,941 teams)
+- *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
+- *2024* National First Prize, Chinese Undergraduate Physics Experiment Competition (CUPEC, top 85 in 2,755 teams)
+
+
