@@ -21,4 +21,30 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
 
+<!-- Dark mode -->
+<style>
+  #theme-toggle{position:fixed;bottom:1.2em;right:1.2em;z-index:1000;width:2.6rem;height:2.6rem;padding:0;border-radius:50%;border:1px solid rgba(128,128,128,.35);background:rgba(255,255,255,.8);color:#333;font-size:1.15rem;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(0,0,0,.2);transition:background .2s,color .2s;}
+  html[data-theme="dark"] #theme-toggle{background:rgba(45,45,45,.9);color:#f0f0f0;border-color:rgba(200,200,200,.25);}
+  html[data-theme="dark"]{background:#121212;}
+  html[data-theme="dark"] body,html[data-theme="dark"] #main,html[data-theme="dark"] .page,html[data-theme="dark"] .page__content,html[data-theme="dark"] .page__inner-wrap{background:#121212 !important;color:#e6e6e6 !important;}
+  html[data-theme="dark"] .masthead{background:#1b1b1b !important;border-bottom-color:#333 !important;}
+  html[data-theme="dark"] .greedy-nav,html[data-theme="dark"] .greedy-nav a,html[data-theme="dark"] .greedy-nav .visible-links a{background:transparent !important;color:#dcdcdc !important;}
+  html[data-theme="dark"] .greedy-nav a:hover{color:#fff !important;}
+  html[data-theme="dark"] .greedy-nav .hidden-links{background:#1b1b1b !important;}
+  html[data-theme="dark"] .greedy-nav button{color:#dcdcdc !important;}
+  html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] h4,html[data-theme="dark"] h5,html[data-theme="dark"] h6,html[data-theme="dark"] strong,html[data-theme="dark"] b,html[data-theme="dark"] .author__name{color:#f5f5f5 !important;}
+  html[data-theme="dark"] a{color:#6ab0ff !important;}
+  html[data-theme="dark"] a:visited{color:#9a8cff !important;}
+  html[data-theme="dark"] a:hover{color:#8fc6ff !important;}
+  html[data-theme="dark"] .author__bio,html[data-theme="dark"] .author__urls li,html[data-theme="dark"] .sidebar,html[data-theme="dark"] .author__urls .fa,html[data-theme="dark"] .author__urls .fas,html[data-theme="dark"] .author__urls .fab,html[data-theme="dark"] .author__urls i{color:#cfcfcf !important;}
+  html[data-theme="dark"] .paper-box{border-bottom-color:#333 !important;}
+  html[data-theme="dark"] code,html[data-theme="dark"] pre,html[data-theme="dark"] .highlight,html[data-theme="dark"] figure.highlight{background:#1e1e1e !important;color:#e6e6e6 !important;}
+  html[data-theme="dark"] blockquote{color:#cfcfcf !important;border-left-color:#444 !important;}
+  html[data-theme="dark"] hr{border-color:#333 !important;}
+  html[data-theme="dark"] .page__footer{background:#1b1b1b !important;color:#cfcfcf !important;}
+  html[data-theme="dark"] .page__footer a{color:#9ec5ff !important;}
+</style>
+<script>
+  (function(){var KEY='theme';var t=localStorage.getItem(KEY)||((window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');document.documentElement.setAttribute('data-theme',t);document.addEventListener('DOMContentLoaded',function(){var b=document.createElement('button');b.id='theme-toggle';b.type='button';b.setAttribute('aria-label','Toggle dark mode');function ic(){b.textContent=document.documentElement.getAttribute('data-theme')==='dark'?'☀':'🌙';}ic();b.addEventListener('click',function(){var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem(KEY,n);ic();});document.body.appendChild(b);});})();
+</script>
 <!-- end custom head snippets -->
