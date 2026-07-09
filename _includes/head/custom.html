@@ -23,7 +23,9 @@
 
 <!-- Dark mode -->
 <style>
-  #theme-toggle{background:none;border:0;padding:0 .35em;margin:0;font-size:1.15em;line-height:1;cursor:pointer;color:inherit;vertical-align:middle;}
+  .masthead__inner-wrap{position:relative;}
+  .masthead__menu{padding-right:2.4em;}
+  #theme-toggle{position:absolute;top:50%;right:.5em;transform:translateY(-50%);background:none;border:0;padding:.1em .3em;margin:0;font-size:1.35em;line-height:1;cursor:pointer;color:inherit;z-index:25;}
   html[data-theme="dark"]{background:#121212;}
   html[data-theme="dark"] body,html[data-theme="dark"] #main,html[data-theme="dark"] .page,html[data-theme="dark"] .page__content,html[data-theme="dark"] .page__inner-wrap{background:#121212 !important;color:#e6e6e6 !important;}
   html[data-theme="dark"] .masthead{background:#1b1b1b !important;border-bottom-color:#333 !important;}
