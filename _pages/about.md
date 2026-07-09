@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification**, **causal inference**, and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that can be genuinely deployed in clinical treatment and biological research — systems that are not only capable, but also **interpretable** and **safe** in high-stakes settings.
+Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification**, **causal inference**, and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that can be genuinely deployed in high-stakes clinical treatment and biological research, because they are not only **capable** but also **causally grounded** and **trustworthy**.
 
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://helloworldlty.github.io/) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
