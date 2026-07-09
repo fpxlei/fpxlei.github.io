@@ -57,10 +57,10 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
   - Building a multi-agent framework that instantiates lab-specific research agents for computational-biology workflows.
 - *Jan 2026 – Present*: **Research Intern** at **University of Wisconsin–Madison**. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
   - Developed **GALA**, an uncertainty-quantification method for retrieval-augmented generation.
-- *Sep 2025 – Dec 2025*: **Research Intern** at **Nanyang Technological University**. *Mentored by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
+- *Sep 2025 – Dec 2025*: **Research Intern** at **Nanyang Technological University**. *Advised by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
   - Studied trust-boundary and user-permission vulnerabilities in GUI / computer-use agents.
 - *May 2025 – Mar 2026*: **Independent Research** at **Arcadia University** & **Jiangsu University**. *Advised by [Prof. Kathy Macropol](https://www.arcadia.edu/faculty-and-staff/katherine-p-macropol/).*
-  - LLM-extracted covariates for clinical causal inference on a MIMIC-IV Sepsis-3 cohort.
+  - Built a causal-inference pipeline with LLM-extracted covariates on a MIMIC-IV Sepsis-3 cohort.
 
 *→ See full details on the [Research Experience](/research/) page.*
 

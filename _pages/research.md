@@ -15,7 +15,7 @@ redirect_from:
   - Developed **GALA**, an uncertainty-quantification method for RAG that estimates answer reliability by exploring the geometry of the semantic answer space.
   - Designed a passage-mixup augmentation that perturbs retrieved evidence to probe answer sensitivity, yielding calibration signals for selective prediction.
   - Reached 0.85 average AUROC on Llama-3.1-8B, outperforming both semantic-entropy and passage-utility baselines across six open-domain QA benchmarks over four target LLMs.
-- *Sep 2025 – Dec 2025*, **Research Intern**, Nanyang Technological University, Singapore. *Mentored by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
+- *Sep 2025 – Dec 2025*, **Research Intern**, Nanyang Technological University, Singapore. *Advised by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
   - Studied trust-boundary and user-permission vulnerabilities in GUI agents, building a general-purpose testing framework on OSWorld to evaluate when and how agents exceed their authorized action scope.
   - Integrated and stress-tested three state-of-the-art computer-use agents (OpenAI Operator, Anthropic Claude Computer Use, OS-Kairos) under a unified evaluation protocol covering 50+ adversarial scenarios, with reproducible Docker-based environments and action-trajectory logging across three provider SDKs.
 - *May 2025 – Mar 2026*, **Independent Research**, Arcadia University & Jiangsu University. *Advised by [Prof. Kathy Macropol](https://www.arcadia.edu/faculty-and-staff/katherine-p-macropol/).*
