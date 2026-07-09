@@ -10,9 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification** and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that can be genuinely deployed in clinical treatment and biological research — systems that are not only capable, but also **interpretable** and **safe** in high-stakes settings.
-
-More broadly, I'm interested in **agentic memory** and **test-time learning**: how agents organize, update, and adapt from experience over time.
+Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification**, **causal inference**, and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that can be genuinely deployed in clinical treatment and biological research — systems that are not only capable, but also **interpretable** and **safe** in high-stakes settings.
 
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://helloworldlty.github.io/) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
@@ -24,7 +22,7 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](#)
+[LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](https://arxiv.org/abs/2604.16763)
 
 **Lei Liu**, Jialin Chen, Kathy Macropol
 
