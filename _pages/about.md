@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** double-majoring in **Mathematics** and **Computer Science**. I work toward the next generation of **safer, more trustworthy clinical and biomedical agents** — through **uncertainty quantification**, **causal inference**, and **security**.
+Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** double-majoring in **Mathematics** and **Computer Science**. My research interests are **uncertainty quantification**, **causal inference**, and **clinical and biomedical agents**, with the goal of building the next generation of **safer, more trustworthy agents**.
 
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://helloworldlty.github.io/) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
