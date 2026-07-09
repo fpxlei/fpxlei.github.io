@@ -47,6 +47,18 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 </div>
 </div>
 
+# 🔬 Research Experience
+- *May 2026 – Present*: **Summer Research Intern** at **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); mentored by [Prof. Tianyu Liu](https://helloworldlty.github.io/).*
+  - Building a multi-agent framework that instantiates lab-specific research agents for computational-biology workflows.
+- *Jan 2026 – Present*: **Research Intern** at **University of Wisconsin–Madison**. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
+  - Developed **GALA**, an uncertainty-quantification method for retrieval-augmented generation.
+- *Jul 2025 – Sep 2025*: **Research Intern** at **Nanyang Technological University**.
+  - Studied trust-boundary and user-permission vulnerabilities in GUI / computer-use agents.
+- *May 2025 – Mar 2026*: **Student Project Lead** at **Jiangsu University**.
+  - LLM-extracted covariates for clinical causal inference on a MIMIC-IV Sepsis-3 cohort.
+
+*→ See full details on the [Research Experience](/research/) page.*
+
 # 📖 Education
 - *Sep 2025 – May 2027*, **Arcadia University** — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
 - *Jul 2026 – Aug 2026*, **Peking University** (Summer School) — *Large Model: From Basic to Practice*, taught by Prof. Tiejun Huang
