@@ -14,21 +14,21 @@ Hi! I'm **Lei Liu** (刘磊), a senior at **Arcadia University** pursuing a doub
 
 More broadly, I'm interested in **agentic memory** and **test-time learning**: how agents organize, update, and adapt from experience over time.
 
-I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) (University of Wisconsin–Madison), [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) (Yale University), and [**Prof. Tianyu Liu**](https://helloworldlty.github.io/) (Yale University). **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
+I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://helloworldlty.github.io/) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
-- *Jul 2026*: &nbsp;🎉🎉 One paper accepted to **ML4H 2026**! See you at Johns Hopkins Hospital in Baltimore.
+- *Jul 2026*: &nbsp;🎉🎉 One paper accepted to **MLHC 2026**! See you at Johns Hopkins Hospital in Baltimore.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ML4H 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](#)
 
 **Lei Liu**, Jialin Chen, Kathy Macropol
 
-*Machine Learning for Healthcare (ML4H) 2026*
+*Machine Learning for Healthcare (MLHC) 2026*
 
 We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.
 </div>
