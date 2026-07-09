@@ -16,4 +16,4 @@ main:
     url: "/#-education"
 
   - title: "Research Experience"
-    url: "/#-research-experience"
+    url: "/research/"
