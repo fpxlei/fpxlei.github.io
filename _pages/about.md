@@ -39,7 +39,7 @@ We study how to integrate LLM-extracted clinical covariates into causal inferenc
 
 **Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
 
-*Submitted to NeurIPS 2026 (Under Review)*
+*Under Review*
 
 We propose **GALA**, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches **0.85 average AUROC** on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.
 </div>
