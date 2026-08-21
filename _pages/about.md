@@ -12,7 +12,7 @@ redirect_from:
 
 Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.arcadia.edu/) pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification**, **causal inference**, and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that are not just **capable**, but **causally grounded** and **trustworthy** enough to be genuinely deployed in high-stakes clinical treatment and biological research.
 
-I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://helloworldlty.github.io/) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
+I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
 - *Jul 2026*: &nbsp;🎉🎉 One paper accepted to **MLHC 2026**! See you at Johns Hopkins Hospital in Baltimore.
@@ -47,14 +47,14 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 
 # 📖 Education
 - *Sep 2025 – May 2027*, [**Arcadia University**](https://www.arcadia.edu/) — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
-- *Jul 2026 – Aug 2026*, [**Peking University**](https://english.pku.edu.cn/index.html) (Summer School) — *Large Model: From Basic to Practice*, taught by Prof. Tiejun Huang
+- *Jul 2026 – Aug 2026*, [**Peking University**](https://english.pku.edu.cn/index.html) (Summer School) — *Large Model: From Basic to Practice*, taught by [**Prof. Tiejun Huang**](https://brain-inspired-lab.github.io/members/tiejun-huang)
 - *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.34/5.00*
 
 # 🔬 Research Experience
 
 <div id="re-brief" markdown="1">
 
-- *May 2026 – Present*: **Summer Research Intern** at **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/) and [Prof. Tianyu Liu](https://helloworldlty.github.io/).*
+- *May 2026 – Present*: **Summer Research Intern** at **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/) and [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm).*
   - Building a multi-agent framework that instantiates lab-specific research agents for computational-biology workflows.
 - *Jan 2026 – Present*: **Research Intern** at **University of Wisconsin–Madison**. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
   - Developed **GALA**, an uncertainty-quantification method for retrieval-augmented generation.
