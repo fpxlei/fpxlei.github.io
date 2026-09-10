@@ -48,7 +48,7 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 # 📖 Education
 - *Sep 2025 – May 2027*, [**Arcadia University**](https://www.arcadia.edu/) — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
 - *Jul 2026 – Aug 2026*, [**Peking University**](https://english.pku.edu.cn/index.html) (Summer Session) — *Large Model: From Basic to Practice*, taught by [**Prof. Tiejun Huang**](https://brain-inspired-lab.github.io/members/tiejun-huang)
-- *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.34/5.00*
+- *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.33/5.00*
 
 # 🔬 Research Experience
 
@@ -96,6 +96,6 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 - *2025* National Second Prize, National University Student Statistical Modeling Competition (top 0.9%)
 - *2025* National Innovation and Entrepreneurship Project Funding, Ministry of Education (CNY 8,000)
 - *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
-- *2024* National First Prize, Chinese Undergraduate Physics Experiment Competition (CUPEC, top 85 in 2,755 teams)
+- *2024* National First Prize, Chinese Undergraduate Physics Experiment Competition (CUPEC, top 3%)
 
 
