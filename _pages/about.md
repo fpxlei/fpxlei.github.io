@@ -91,8 +91,10 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 </div>
 
 # 🎖 Honors and Awards
+- *2025 – 2026* Dean's Distinguished Honor List, Arcadia University (Fall 2025, Spring 2026)
 - *2025* Arcadia University President's Scholarship ($56,000 total)
 - *2025* National Second Prize, National University Student Statistical Modeling Competition (top 268 in 30,941 teams)
+- *2025* National Innovation and Entrepreneurship Project Funding, Ministry of Education (CNY 8,000)
 - *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
 - *2024* National First Prize, Chinese Undergraduate Physics Experiment Competition (CUPEC, top 85 in 2,755 teams)
 
