@@ -39,7 +39,7 @@ We study how to integrate LLM-extracted clinical covariates into causal inferenc
 
 [LabAgent: Customize Any Research Hubs for Scientific Discoveries Using AI Agents](https://arxiv.org/abs/2609.13437)
 
-**Lei Liu**, Jialin Chen, Yikun Zhang, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
+**Lei Liu**, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
 
 *Under Review*
 
