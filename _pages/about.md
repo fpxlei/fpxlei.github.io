@@ -60,7 +60,7 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_merid.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MERID: Multimodal Exploration via Recursive Self-Improvement Agents for Major Depression Analysis](#)
@@ -73,7 +73,7 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](#)
