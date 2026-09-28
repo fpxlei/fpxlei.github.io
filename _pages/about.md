@@ -41,7 +41,7 @@ We study how to integrate LLM-extracted clinical covariates into causal inferenc
 
 **Lei Liu**, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
 
-*Under review, Nature Methods*
+*Under Review*
 
 We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results and recording failure-and-repair experience so later runs avoid the same errors. Across drug property prediction, biomedical data analysis, protein variant effect prediction, and statistical genetics, LabAgent both reproduces published methods and composes them into new solutions — reaching a mean Spearman correlation of **0.443** across 13 ProteinGym assays and the highest **BiomniBench-DA** process score (74.4) among evaluated agent baselines.
 </div>
@@ -54,7 +54,7 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 
 **Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
 
-*Under review, AISTATS 2027*
+*Under Review*
 
 We propose **GALA**, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches **0.85 average AUROC** on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.
 </div>
@@ -67,7 +67,7 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 
 **Lei Liu**, Zhaokang Liang, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu
 
-*Under review, ICLR 2027*
+*Under Review*
 
 We present **MERID**, a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules. Selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
 </div>
