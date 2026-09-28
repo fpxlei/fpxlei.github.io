@@ -73,14 +73,14 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](#)
 
 Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu <br> <span style="font-size:0.9em">\* Equal contribution</span>
 
-*Under review, ICLR 2027*
+*Technical Report*
 
 **OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
 </div>
