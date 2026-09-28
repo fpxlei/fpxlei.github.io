@@ -41,7 +41,7 @@ We study how to integrate LLM-extracted clinical covariates into causal inferenc
 
 **Lei Liu**, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
 
-*Under Review*
+*Under review, Nature Methods*
 
 We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results and recording failure-and-repair experience so later runs avoid the same errors. Across drug property prediction, biomedical data analysis, protein variant effect prediction, and statistical genetics, LabAgent both reproduces published methods and composes them into new solutions — reaching a mean Spearman correlation of **0.443** across 13 ProteinGym assays and the highest **BiomniBench-DA** process score (74.4) among evaluated agent baselines.
 </div>
@@ -54,9 +54,35 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 
 **Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
 
-*Submitted to NeurIPS 2026 (Under Review)*
+*Under review, AISTATS 2027*
 
 We propose **GALA**, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches **0.85 average AUROC** on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MERID: Multimodal Exploration via Recursive Self-Improvement Agents for Major Depression Analysis](#)
+
+**Lei Liu**, Zhaokang Liang, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu
+
+*Under review, ICLR 2027*
+
+We present **MERID**, a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules. Selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](#)
+
+Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu <br> <span style="font-size:0.9em">\* Equal contribution</span>
+
+*Under review, ICLR 2027*
+
+**OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
 </div>
 </div>
 
