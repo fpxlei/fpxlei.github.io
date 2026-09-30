@@ -63,7 +63,7 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_merid.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MERID: Multimodal Exploration via Recursive Self-Improvement Agents for Major Depression Analysis](#)
+[MERID: Multimodal Exploration via Recursive Self-Improvement Agents for Major Depression Analysis](https://arxiv.org/abs/2609.36235)
 
 **Lei Liu**, Zhaokang Liang, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu
 
@@ -76,7 +76,7 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](#)
+[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
 
 Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
 
