@@ -15,6 +15,8 @@ Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.a
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
+- *Sep 2026*: &nbsp;📄 **MERID** is now on [arXiv](https://arxiv.org/abs/2609.36235)!
+- *Sep 2026*: &nbsp;🚀 **OSWorld-Science** is released — check out the [project page](https://huggingface.co/spaces/SciAILab/osworld-science-page)!
 - *Sep 2026*: &nbsp;📄 **LabAgent** is now on [arXiv](https://arxiv.org/abs/2609.13437)!
 - *Jul 2026*: &nbsp;🎉🎉 One paper accepted to **MLHC 2026**! See you at Johns Hopkins Hospital in Baltimore.
 
