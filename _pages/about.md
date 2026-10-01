@@ -23,16 +23,16 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 <span class='anchor' id='-publications'></span>
 # 📝 Publications & Manuscripts
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](https://arxiv.org/abs/2604.16763)
+[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
 
-**Lei Liu**, Jialin Chen, Kathy Macropol
+Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
 
-*Machine Learning for Healthcare (MLHC) 2026*
+*Technical Report*
 
-We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.
+**OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
 </div>
 </div>
 
@@ -49,19 +49,6 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG](#)
-
-**Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
-
-*Under Review*
-
-We propose **GALA**, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches **0.85 average AUROC** on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_merid.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -75,16 +62,29 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
+[LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](https://arxiv.org/abs/2604.16763)
 
-Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
+**Lei Liu**, Jialin Chen, Kathy Macropol
 
-*Technical Report*
+*Machine Learning for Healthcare (MLHC) 2026*
 
-**OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
+We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG](#)
+
+**Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
+
+*Under Review*
+
+We propose **GALA**, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches **0.85 average AUROC** on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.
 </div>
 </div>
 
