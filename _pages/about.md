@@ -134,10 +134,11 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 </div>
 
 <span class='anchor' id='-academic-service'></span>
-# 🤝 Academic Service
+# 🎖 Academic Service
 - **Conference Reviewer**: ML4H 2026, WSDM 2027
 
-# 🎖 Honors and Awards
+<span class='anchor' id='-honors-and-awards'></span>
+# 🏆 Honors & Awards
 - *2025 – 2026* Dean's Distinguished Honor List, Arcadia University (Fall 2025, Spring 2026)
 - *2025* Arcadia University President's Scholarship ($56,000 total)
 - *2025* National Second Prize, National University Student Statistical Modeling Competition (top 0.9%)
