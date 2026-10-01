@@ -133,8 +133,8 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 <a href="javascript:void(0);" onclick="document.getElementById('re-full').style.display='none';document.getElementById('re-brief').style.display='block';return false;"><strong>▴ Show less</strong></a>
 </div>
 
-<span class='anchor' id='-academic-service'></span>
-# 🎖 Academic Service
+<span class='anchor' id='-academic-services'></span>
+# 🎖 Academic Services
 - **Conference Reviewer**: ML4H 2026, WSDM 2027
 
 <span class='anchor' id='-honors-and-awards'></span>
