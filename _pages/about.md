@@ -15,6 +15,7 @@ Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.a
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
+- *Oct 2026*: &nbsp;🏅 **LabAgent** received a **Registration Award** from the 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/)! Presenting a poster at Harvard, Oct 29–30.
 - *Sep 2026*: &nbsp;📄 **MERID** is now on [arXiv](https://arxiv.org/abs/2609.36235)!
 - *Sep 2026*: &nbsp;🚀 **OSWorld-Science** is released — check out the [project page](https://huggingface.co/spaces/SciAILab/osworld-science-page)!
 - *Sep 2026*: &nbsp;📄 **LabAgent** is now on [arXiv](https://arxiv.org/abs/2609.13437)!
@@ -44,6 +45,8 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 **Lei Liu**, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
 
 *Under Review*
+
+🏅 **Registration Award**, 19th PQG Conference — poster presentation at Harvard, Oct 2026.
 
 We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results and recording failure-and-repair experience so later runs avoid the same errors. Across drug property prediction, biomedical data analysis, protein variant effect prediction, and statistical genetics, LabAgent both reproduces published methods and composes them into new solutions — reaching a mean Spearman correlation of **0.443** across 13 ProteinGym assays and the highest **BiomniBench-DA** process score (74.4) among evaluated agent baselines.
 </div>
