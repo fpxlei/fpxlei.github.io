@@ -33,6 +33,10 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 
 *Technical Report*
 
+<div class="paper-links">
+<a href="https://huggingface.co/spaces/SciAILab/osworld-science-page" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Project Page</a>
+</div>
+
 **OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
 </div>
 </div>
@@ -48,6 +52,10 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 
 🏅 **Registration Award**, 19th PQG Conference — poster presentation at Harvard, Oct 2026.
 
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2609.13437" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+</div>
+
 We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results and recording failure-and-repair experience so later runs avoid the same errors. Across drug property prediction, biomedical data analysis, protein variant effect prediction, and statistical genetics, LabAgent both reproduces published methods and composes them into new solutions — reaching a mean Spearman correlation of **0.443** across 13 ProteinGym assays and the highest **BiomniBench-DA** process score (74.4) among evaluated agent baselines.
 </div>
 </div>
@@ -61,6 +69,10 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 
 *Under Review*
 
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+</div>
+
 We present **MERID**, a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules. Selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
 </div>
 </div>
@@ -73,6 +85,10 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 **Lei Liu**, Jialin Chen, Kathy Macropol
 
 *Machine Learning for Healthcare (MLHC) 2026*
+
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2604.16763" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+</div>
 
 We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.
 </div>

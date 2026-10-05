@@ -107,3 +107,35 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+/* Link pills under each publication entry */
+.paper-links {
+    margin: 0.6em 0 0.1em;
+    line-height: 2.1;
+
+    a {
+        display: inline-block;
+        margin: 0 0.35em 0.2em 0;
+        padding: 0.12em 0.8em;
+        border: 1px solid mix(#000, $lighter-gray, 10%);
+        border-radius: 1em;
+        background-color: $lighter-gray;
+        color: $text-color;
+        font-size: 0.7em;
+        font-weight: 600;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+
+        i {
+            margin-right: 0.35em;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $link-color;
+            border-color: $link-color;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
