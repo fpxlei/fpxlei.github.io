@@ -17,7 +17,7 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 # 🔥 News
 - *Oct 2026*: &nbsp;🏅 **LabAgent** received a **Registration Award** from the 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/)! Presenting a poster at Harvard, Oct 29–30.
 - *Sep 2026*: &nbsp;📄 **MERID** is now on [arXiv](https://arxiv.org/abs/2609.36235)!
-- *Sep 2026*: &nbsp;🚀 **OSWorld-Science** is released — check out the [project page](https://huggingface.co/spaces/SciAILab/osworld-science-page)!
+- *Sep 2026*: &nbsp;🚀 **OSWorld-Science** is out on [arXiv](https://arxiv.org/abs/2609.39903) — check out the [project page](https://huggingface.co/spaces/SciAILab/osworld-science-page)!
 - *Sep 2026*: &nbsp;📄 **LabAgent** is now on [arXiv](https://arxiv.org/abs/2609.13437)!
 - *Jul 2026*: &nbsp;🎉🎉 One paper accepted to **MLHC 2026**! See you at Johns Hopkins Hospital in Baltimore.
 
@@ -34,6 +34,7 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 *Technical Report*
 
 <div class="paper-links">
+<a href="https://arxiv.org/abs/2609.39903" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
 <a href="https://huggingface.co/spaces/SciAILab/osworld-science-page" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Project Page</a>
 </div>
 
