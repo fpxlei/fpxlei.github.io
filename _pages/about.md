@@ -42,14 +42,14 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv Preprint</div><img src='images/pub_labagent.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_labagent.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LabAgent: Customize Any Research Hubs for Scientific Discoveries Using AI Agents](https://arxiv.org/abs/2609.13437)
 
 **Lei Liu**, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
 
-*arXiv Preprint*
+*Under Review*
 
 🏅 **Registration Award**, 19th PQG Conference — poster presentation at Harvard, Oct 2026.
 
@@ -61,14 +61,14 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv Preprint</div><img src='images/pub_merid.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_merid.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MERID: Multimodal Exploration via Recursive Self-Improvement Agents for Major Depression Analysis](https://arxiv.org/abs/2609.36235)
 
 **Lei Liu**, Zhaokang Liang, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu
 
-*arXiv Preprint*
+*Under Review*
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
@@ -95,14 +95,14 @@ We study how to integrate LLM-extracted clinical covariates into causal inferenc
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Manuscript</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG](#)
 
 **Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
 
-*Manuscript*
+*Under Review*
 
 We propose **GALA**, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches **0.85 average AUROC** on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.
 </div>
@@ -132,10 +132,10 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 <div id="re-full" markdown="1" style="display:none">
 
 - *May 2026 – Present*, **Research Intern** (full-time), Yale University, New Haven, CT. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/) and [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm).*
-  - **LabAgent** (first author, [arXiv:2609.13437](https://arxiv.org/abs/2609.13437)): designed and built a research-agent framework that converts laboratory papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results, with persistent failure-and-repair memory and an evaluation suite that emits auditable run artifacts.
+  - **LabAgent** (first author, [arXiv:2609.13437](https://arxiv.org/abs/2609.13437), under review): designed and built a research-agent framework that converts laboratory papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results, with persistent failure-and-repair memory and an evaluation suite that emits auditable run artifacts.
   - Benchmarked against Claude Code, Codex, and Claude Science: mean Spearman correlation of 0.443 across 13 ProteinGym assays with 7 outright wins; 32 of 65 TDC ADMET entries reproduced within published error bars; highest BiomniBench-DA process score (74.4) among evaluated agent baselines.
   - Reconstructed a UK Biobank fine-mapping analysis spanning 5 methods, 10 settings, 93,000 variants, and 10,000 samples in under 3 hours, recovering all reported orderings; identified a donor-level confounder in a separate single-cell eQTL task.
-  - **MERID** (first author, [arXiv:2609.36235](https://arxiv.org/abs/2609.36235)): built a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules; selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
+  - **MERID** (first author, under review): built a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules; selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
   - Implemented a temporal-JEPA encoder for time-series modalities as part of ongoing work on biomedical world models over clinical text, video, and EEG.
 - *Jan 2026 – Present*, **Research Intern** (part-time), University of Wisconsin–Madison, Madison, WI. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
   - Developed **GALA**, an uncertainty-quantification method for RAG that perturbs retrieved passages and measures semantic dispersion across the generated answers; led method development, experiments, and manuscript preparation.
