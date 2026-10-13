@@ -16,6 +16,7 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 
 # 🔥 News
 - *Oct 2026*: &nbsp;🎉 **MERID** was selected for an **oral presentation** at the [2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit)](https://beihai.tsinghua.syhci.cn/index.html)!
+- *Oct 2026*: &nbsp;📰 **OSWorld-Science** was featured by [Synced (机器之心)](https://mp.weixin.qq.com/s/sbXVbgqMj6K2iRoQgiRN5w)!
 - *Oct 2026*: &nbsp;🏅 **LabAgent** received a **Registration Award** from the 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/)! Presenting a poster at Harvard, Oct 29–30.
 - *Sep 2026*: &nbsp;📄 **MERID** is now on [arXiv](https://arxiv.org/abs/2609.36235)!
 - *Sep 2026*: &nbsp;🚀 **OSWorld-Science** is out on [arXiv](https://arxiv.org/abs/2609.39903) — check out the [project page](https://huggingface.co/spaces/SciAILab/osworld-science-page)!
