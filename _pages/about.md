@@ -15,6 +15,7 @@ Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.a
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
+- *Oct 2026*: &nbsp;🎤 **MERID** was selected for an **oral presentation** at the [2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit)](https://beihai.tsinghua.syhci.cn/index.html)!
 - *Oct 2026*: &nbsp;🏅 **LabAgent** received a **Registration Award** from the 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/)! Presenting a poster at Harvard, Oct 29–30.
 - *Sep 2026*: &nbsp;📄 **MERID** is now on [arXiv](https://arxiv.org/abs/2609.36235)!
 - *Sep 2026*: &nbsp;🚀 **OSWorld-Science** is out on [arXiv](https://arxiv.org/abs/2609.39903) — check out the [project page](https://huggingface.co/spaces/SciAILab/osworld-science-page)!
@@ -69,6 +70,8 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 **Lei Liu**, Zhaokang Liang, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu
 
 *Under Review*
+
+🎤 **Oral Presentation**, 2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit), 2026.
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
