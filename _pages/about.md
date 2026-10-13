@@ -52,7 +52,7 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 
 *Under Review*
 
-🏅 **Registration Award**, 19th PQG Conference — poster presentation at Harvard, Oct 2026.
+🏅 **Registration Award**, 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/) — poster presentation at Harvard, Oct 2026.
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.13437" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
@@ -71,7 +71,7 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 
 *Under Review*
 
-🎉 **Oral Presentation**, 2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit), 2026.
+🎉 **Oral Presentation**, [2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit)](https://beihai.tsinghua.syhci.cn/index.html), 2026.
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
