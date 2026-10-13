@@ -34,6 +34,8 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 
 *Technical Report*
 
+📰 **Featured by** [Synced (机器之心)](https://mp.weixin.qq.com/s/sbXVbgqMj6K2iRoQgiRN5w).
+
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.39903" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
 <a href="https://huggingface.co/spaces/SciAILab/osworld-science-page" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Project Page</a>
