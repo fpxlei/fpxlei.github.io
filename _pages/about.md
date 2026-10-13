@@ -71,7 +71,7 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 
 *Under Review*
 
-**Oral Presentation**, 2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit), 2026.
+🎉 **Oral Presentation**, 2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit), 2026.
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
