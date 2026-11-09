@@ -15,6 +15,7 @@ Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.a
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
+- *Nov 2026*: &nbsp;🏅 Received an **NIH Travel Grant** from Johns Hopkins University to present our **MLHC 2026** paper!
 - *Oct 2026*: &nbsp;🎉 **MERID** was selected for an **oral presentation** at the [2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit)](https://beihai.tsinghua.syhci.cn/index.html)!
 - *Oct 2026*: &nbsp;📰 **OSWorld-Science** was featured by [Synced (机器之心)](https://mp.weixin.qq.com/s/sbXVbgqMj6K2iRoQgiRN5w)!
 - *Oct 2026*: &nbsp;🏅 **LabAgent** received a **Registration Award** from the 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/)! Presenting a poster at Harvard, Oct 29–30.
@@ -92,6 +93,8 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 **Lei Liu**, Jialin Chen, Kathy Macropol
 
 *Machine Learning for Healthcare (MLHC) 2026*
+
+🏅 **NIH Travel Grant**, awarded by Johns Hopkins University to present this work at MLHC 2026.
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2604.16763" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
