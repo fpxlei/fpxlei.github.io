@@ -12,7 +12,7 @@ redirect_from:
 
 Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.arcadia.edu/) pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification**, **causal inference**, and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that are not just **capable**, but **causally grounded** and **trustworthy** enough to be genuinely deployed in high-stakes clinical treatment and biological research.
 
-I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison, and by [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) and [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Yale University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
+I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison and [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) at Yale University, and co-advised by [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Tsinghua University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 # 🔥 News
 - *Nov 2026*: &nbsp;🏅 Received an **NIH Travel Grant** from Johns Hopkins University to present our **MLHC 2026** paper!
@@ -27,23 +27,22 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 <span class='anchor' id='-publications'></span>
 # 📝 Publications & Manuscripts
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
+[LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](https://arxiv.org/abs/2604.16763)
 
-Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
+**Lei Liu**, Jialin Chen, Kathy Macropol
 
-*Technical Report*
+*Machine Learning for Healthcare (MLHC) 2026*
 
-📰 **Featured by** [Synced (机器之心)](https://mp.weixin.qq.com/s/sbXVbgqMj6K2iRoQgiRN5w).
+🏅 **NIH Travel Grant**, awarded by Johns Hopkins University to present this work at MLHC 2026.
 
 <div class="paper-links">
-<a href="https://arxiv.org/abs/2609.39903" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
-<a href="https://huggingface.co/spaces/SciAILab/osworld-science-page" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Project Page</a>
+<a href="https://arxiv.org/abs/2604.16763" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
 </div>
 
-**OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
+We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.
 </div>
 </div>
 
@@ -66,6 +65,26 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
+
+Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
+
+*Technical Report*
+
+📰 **Featured by** [Synced (机器之心)](https://mp.weixin.qq.com/s/sbXVbgqMj6K2iRoQgiRN5w).
+
+<div class="paper-links">
+<a href="https://arxiv.org/abs/2609.39903" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+<a href="https://huggingface.co/spaces/SciAILab/osworld-science-page" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Project Page</a>
+</div>
+
+**OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_merid.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -85,29 +104,10 @@ We present **MERID**, a recursive self-improving multi-agent system for major de
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MLHC 2026</div><img src='images/pub_causal.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[LLM-Extracted Covariates for Clinical Causal Inference: Rethinking Integration Strategies](https://arxiv.org/abs/2604.16763)
-
-**Lei Liu**, Jialin Chen, Kathy Macropol
-
-*Machine Learning for Healthcare (MLHC) 2026*
-
-🏅 **NIH Travel Grant**, awarded by Johns Hopkins University to present this work at MLHC 2026.
-
-<div class="paper-links">
-<a href="https://arxiv.org/abs/2604.16763" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
-</div>
-
-We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG](#)
+**Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG**
 
 **Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
 
@@ -126,7 +126,7 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 
 <div id="re-brief" markdown="1">
 
-- *May 2026 – Present*: **Research Intern** at **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/) and [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm).*
+- *May 2026 – Present*: **Research Intern** at **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
   - First author on **LabAgent**, a research-agent framework that turns lab papers, code, and tutorials into reproduction-verified executable skills, and on **MERID**, a recursive self-improving multi-agent system for major-depression analysis.
 - *Jan 2026 – Present*: **Research Intern** at **University of Wisconsin–Madison**. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
   - Developed **GALA**, an uncertainty-quantification method for retrieval-augmented generation, best or tied-best in 18 of 24 benchmark settings.
@@ -140,7 +140,7 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 
 <div id="re-full" markdown="1" style="display:none">
 
-- *May 2026 – Present*, **Research Intern** (full-time), Yale University, New Haven, CT. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/) and [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm).*
+- *May 2026 – Present*, **Research Intern** (part-time), Yale University, New Haven, CT. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
   - **LabAgent** (first author, [arXiv:2609.13437](https://arxiv.org/abs/2609.13437), under review): designed and built a research-agent framework that converts laboratory papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results, with persistent failure-and-repair memory and an evaluation suite that emits auditable run artifacts.
   - Benchmarked against Claude Code, Codex, and Claude Science: mean Spearman correlation of 0.443 across 13 ProteinGym assays with 7 outright wins; 32 of 65 TDC ADMET entries reproduced within published error bars; highest BiomniBench-DA process score (74.4) among evaluated agent baselines.
   - Reconstructed a UK Biobank fine-mapping analysis spanning 5 methods, 10 settings, 93,000 variants, and 10,000 samples in under 3 hours, recovering all reported orderings; identified a donor-level confounder in a separate single-cell eQTL task.
