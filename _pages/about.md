@@ -10,7 +10,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.arcadia.edu/) pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **uncertainty quantification**, **causal inference**, and **LLM agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that are not just **capable**, but **causally grounded** and **trustworthy** enough to be genuinely deployed in high-stakes clinical treatment and biological research.
+Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.arcadia.edu/) pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **trustworthy machine learning** for **healthcare** and **scientific discovery** — in particular **uncertainty quantification**, **causal inference**, and **GUI / LLM-based research agents** for **clinical and biomedical** applications. My goal is to build the next generation of agents and large language models that are not just **capable**, but **causally grounded** and **trustworthy** enough to be genuinely deployed in high-stakes clinical treatment and biological research.
 
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison and [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) at Yale University, and co-advised by [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Tsinghua University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
@@ -53,7 +53,7 @@ We study how to integrate LLM-extracted clinical covariates into causal inferenc
 
 **Lei Liu**, Yikun Zhang, Jialin Chen, Wanjia Zhao, Rex Ying, Wengong Jin, Hua Xu, James Zou, Tianyu Liu, Hongyu Zhao
 
-*Under Review*
+*Under Review at Nature Machine Intelligence*
 
 🏅 **Registration Award**, 19th [PQG Conference](https://hsph.harvard.edu/research/quantitative-genomics/pqg-conference/) — poster presentation at Harvard, Oct 2026.
 
@@ -68,9 +68,9 @@ We introduce **LabAgent**, a reproduce-and-discover framework that turns a lab's
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='images/pub_osworld.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[OSWorld-Science: A Playground of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
+[OSWorld-Science: A Benchmark of Computer Use Agents for Learning and Using Scientific Software](https://huggingface.co/spaces/SciAILab/osworld-science-page)
 
-Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Kunyang Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Ruihan Lin, Shi Bo, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Yunshan Guo, Amy Xin, Minghao Liu, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
+Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\*, Qingcheng Zeng, Qi Kang, Oliver Sun, Eric Wang, Bo Zhou, Haixin Wang, Yufan Du, Shi Bo, Ruihan Lin, Mengqi Yuan, Dunjie Lu, Steven Dillmann, Yiming Shi, Tina Su, Amy Xin, Minghao Liu, Xi Wang, Xu Huang, Ge Zhang, Pengyu Nie, Zhen Yang, Jie Tang, Juanzi Li, Weihao Xuan, Tianyu Liu\* <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
 
 *Technical Report*
 
@@ -81,7 +81,7 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 <a href="https://huggingface.co/spaces/SciAILab/osworld-science-page" target="_blank" rel="noopener"><i class="fas fa-globe"></i>Project Page</a>
 </div>
 
-**OSWorld-Science** is an interactive environment for computer-use agents to learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
+**OSWorld-Science** is a benchmark for computer-use agents that learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
 </div>
 </div>
 
@@ -90,7 +90,7 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 
 [MERID: Multimodal Exploration via Recursive Self-Improvement Agents for Major Depression Analysis](https://arxiv.org/abs/2609.36235)
 
-**Lei Liu**, Zhaokang Liang, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu
+**Lei Liu**\*, Zhaokang Liang\*, Qingcheng Zeng, Chenda Duan, Lu Mi, Zhen Tan, Tianyu Liu <br> <span style="font-size:0.9em">\* Equal contribution (co-first authors)</span>
 
 *Under Review*
 
@@ -100,7 +100,7 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 <a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
 </div>
 
-We present **MERID**, a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules. Selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
+We present **MERID**, a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules. Selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on depression datasets including E-DAIC and MPDD-2025/2026.
 </div>
 </div>
 
@@ -120,14 +120,15 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 # 📖 Education
 - *Sep 2025 – May 2027*, [**Arcadia University**](https://www.arcadia.edu/) — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
 - *Jul 2026 – Aug 2026*, [**Peking University**](https://english.pku.edu.cn/index.html) (Summer Session Exchange Student) — Instructor: [**Prof. Tiejun Huang**](https://brain-inspired-lab.github.io/members/tiejun-huang)
-- *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.33/5.00*
+- *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.34/5.00 (WES 3.92/4.00)*
 
 # 🔬 Research Experience
 
 <div id="re-brief" markdown="1">
 
 - *May 2026 – Present*: **Research Intern** at **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
-  - First author on **LabAgent**, a research-agent framework that turns lab papers, code, and tutorials into reproduction-verified executable skills, and on **MERID**, a recursive self-improving multi-agent system for major-depression analysis.
+  - First author on **LabAgent**, a research-agent framework that turns lab papers, code, and tutorials into reproduction-verified executable skills; co-first author on **MERID**, a recursive self-improving multi-agent system for major-depression analysis, and on **OSWorld-Science**, a benchmark of computer-use agents for scientific software.
+  - Since Sep 2026: building an AI-hospital benchmark for continual learning, a multimodal mental-health world model, and OSWorld-Science V2.0.
 - *Jan 2026 – Present*: **Research Intern** at **University of Wisconsin–Madison**. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
   - Developed **GALA**, an uncertainty-quantification method for retrieval-augmented generation, best or tied-best in 18 of 24 benchmark settings.
 - *Jul 2025 – Sep 2025*: **Research Intern** at **Nanyang Technological University**. *Advised by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
@@ -140,12 +141,16 @@ We propose **GALA**, an uncertainty-quantification method for retrieval-augmente
 
 <div id="re-full" markdown="1" style="display:none">
 
-- *May 2026 – Present*, **Research Intern** (full-time May – Aug 2026; part-time since Sep 2026), Yale University, New Haven, CT. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
-  - **LabAgent** (first author, [arXiv:2609.13437](https://arxiv.org/abs/2609.13437), under review): designed and built a research-agent framework that converts laboratory papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results, with persistent failure-and-repair memory and an evaluation suite that emits auditable run artifacts.
+- *Sep 2026 – Present*, **Research Intern** (part-time), Yale University, New Haven, CT. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
+  - **AI hospital**: built a simulator that models realistic disease progression and resource dynamics on 58 cases; scaling 11 pilot runs on 4 LLMs into an autonomous hospital benchmark for continual learning.
+  - **Mental-health world model**: building a multimodal Qwen3-Omni world model with MERID for psychiatric trajectories on UK Biobank, targeting multicenter independent-cohort validation including MIMIC-IV.
+  - **OSWorld-Science V2.0**: scaling the benchmark into economics, materials science, and linguistics with realistic workflows across scientific software; leading the biomedical design and extending toward physical lab experimentation.
+- *May 2026 – Aug 2026*, **Research Intern** (full-time), Yale University, New Haven, CT. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
+  - **LabAgent** (first author, [arXiv:2609.13437](https://arxiv.org/abs/2609.13437), under review at *Nature Machine Intelligence*): designed and built a research-agent framework that converts laboratory papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results, with persistent failure-and-repair memory and an evaluation suite that emits auditable run artifacts.
   - Benchmarked against Claude Code, Codex, and Claude Science: mean Spearman correlation of 0.443 across 13 ProteinGym assays with 7 outright wins; 32 of 65 TDC ADMET entries reproduced within published error bars; highest BiomniBench-DA process score (74.4) among evaluated agent baselines.
   - Reconstructed a UK Biobank fine-mapping analysis spanning 5 methods, 10 settings, 93,000 variants, and 10,000 samples in under 3 hours, recovering all reported orderings; identified a donor-level confounder in a separate single-cell eQTL task.
-  - **MERID** (first author, under review): built a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules; selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on MPDD, DAIC-WOZ, and CMDC.
-  - Implemented a temporal-JEPA encoder for time-series modalities as part of ongoing work on biomedical world models over clinical text, video, and EEG.
+  - **MERID** (co-first author, [arXiv:2609.36235](https://arxiv.org/abs/2609.36235), under review): built a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules; selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on depression datasets including E-DAIC and MPDD-2025/2026.
+  - **OSWorld-Science** (co-first author, [arXiv:2609.39903](https://arxiv.org/abs/2609.39903)): led the design, construction, and evaluation of 18 of the 146 biology tasks in PyMOL and Mnova together with biologists; found that agents' self-checks mostly verified only file existence and format.
 - *Jan 2026 – Present*, **Research Intern** (part-time), University of Wisconsin–Madison, Madison, WI. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
   - Developed **GALA**, an uncertainty-quantification method for RAG that perturbs retrieved passages and measures semantic dispersion across the generated answers; led method development, experiments, and manuscript preparation.
   - Achieved best or tied-best AUROC in 18 of 24 settings across six QA benchmarks and four LLMs, with up to 12 percentage points over the strongest baseline (0.93 vs. 0.81 on RefuNQ) using 40 trainable parameters.
