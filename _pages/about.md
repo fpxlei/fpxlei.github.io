@@ -49,7 +49,7 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 Folding **LLM-extracted confounders** from clinical notes into the propensity model substantially revises sepsis treatment-effect estimates on 21,859 MIMIC-IV patients.
 
 <div class="paper-more">
-<details><summary>Show more</summary>
+<details><summary><span class="pm-closed">Read more</span><span class="pm-open">Show less</span><i class="fas fa-chevron-down"></i></summary>
 <p>We study how to integrate LLM-extracted clinical covariates into causal inference. On a MIMIC-IV Sepsis-3 cohort of 21,859 patients, we compare seven covariate-integration strategies and show that augmenting the propensity model with LLM-extracted confounders (functional, mental, and code status from free-text notes) substantially revises effect estimates — directionally consistent with the CLOVERS RCT and robust under a doubly-robust AIPW estimator.</p>
 </details>
 </div>
@@ -74,7 +74,7 @@ Folding **LLM-extracted confounders** from clinical notes into the propensity mo
 Turns a lab's papers, code, and tutorials into **reproduction-verified executable skills**, so AI agents can both reproduce and extend published biomedical methods.
 
 <div class="paper-more">
-<details><summary>Show more</summary>
+<details><summary><span class="pm-closed">Read more</span><span class="pm-open">Show less</span><i class="fas fa-chevron-down"></i></summary>
 <p>We introduce <strong>LabAgent</strong>, a reproduce-and-discover framework that turns a lab's papers, code, and tutorials into executable skills, admitting a skill only after it reproduces published results and recording failure-and-repair experience so later runs avoid the same errors. Across drug property prediction, biomedical data analysis, protein variant effect prediction, and statistical genetics, LabAgent both reproduces published methods and composes them into new solutions — reaching a mean Spearman correlation of <strong>0.443</strong> across 13 ProteinGym assays and the highest <strong>BiomniBench-DA</strong> process score (74.4) among evaluated agent baselines.</p>
 </details>
 </div>
@@ -119,7 +119,7 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 A **recursive self-improving multi-agent system** that autonomously searches over features, modalities, and learners for major depression detection.
 
 <div class="paper-more">
-<details><summary>Show more</summary>
+<details><summary><span class="pm-closed">Read more</span><span class="pm-open">Show less</span><i class="fas fa-chevron-down"></i></summary>
 <p>We present <strong>MERID</strong>, a recursive self-improving multi-agent system for major depressive disorder detection that autonomously searches over feature representations, modalities, learners, and calibration rules. Selection criteria based on cross-fold stability and modality contribution guide the agents' self-evolution, with evaluation on depression datasets including E-DAIC and MPDD-2025/2026.</p>
 </details>
 </div>
@@ -138,7 +138,7 @@ A **recursive self-improving multi-agent system** that autonomously searches ove
 Estimates when a RAG answer can be trusted by probing the **geometry of its semantic answer space** with passage mixup.
 
 <div class="paper-more">
-<details><summary>Show more</summary>
+<details><summary><span class="pm-closed">Read more</span><span class="pm-open">Show less</span><i class="fas fa-chevron-down"></i></summary>
 <p>We propose <strong>GALA</strong>, an uncertainty-quantification method for retrieval-augmented generation that estimates answer reliability by exploring the geometry of the semantic answer space, using a passage-mixup augmentation to probe answer sensitivity. GALA reaches <strong>0.85 average AUROC</strong> on Llama-3.1-8B, outperforming semantic-entropy and passage-utility baselines across six open-domain QA benchmarks.</p>
 </details>
 </div>
@@ -151,21 +151,60 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 - *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.34/5.00 (WES 3.92/4.00)*
 
 # 🔬 Research Experience
-- *Sep 2026 – Present*, **Research Intern** (part-time), **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
-  - **Focus:** AI-hospital simulation, multimodal world models for mental health, and computer-use agents for science.
-  - **Ongoing:** an AI-hospital benchmark for continual learning; a Qwen3-Omni mental-health world model on UK Biobank; OSWorld-Science V2.0.
-- *May 2026 – Aug 2026*, **Research Intern** (full-time), **Yale University**. *Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
-  - **Focus:** Research agents for scientific discovery and multimodal mental-health analysis.
-  - **Work:** [LabAgent](https://arxiv.org/abs/2609.13437) (first author, under review at *Nature Machine Intelligence*); [MERID](https://arxiv.org/abs/2609.36235) (co-first author, oral at BEIHAI Summit); [OSWorld-Science](https://arxiv.org/abs/2609.39903) (co-first author, technical report).
-- *Jan 2026 – Present*, **Research Intern** (part-time), **University of Wisconsin–Madison**. *Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
-  - **Focus:** Uncertainty quantification for retrieval-augmented generation.
-  - **Work:** GALA (first author, under review).
-- *Jul 2025 – Sep 2025*, **Research Intern** (part-time), **Nanyang Technological University**. *Advised by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
-  - **Focus:** Permission safety of GUI / computer-use agents under prompt-injection attacks.
-  - **Work:** an OSWorld-based testbed measuring permission violations of commercial and open-source GUI agents.
-- *May 2025 – Mar 2026*, **Project Leader**, **Clinical Causal Inference** — National-Level College Students' Innovation and Entrepreneurship Program. *Advised by [Prof. Kathy Macropol](https://www.arcadia.edu/faculty-and-staff/katherine-p-macropol/).*
-  - **Focus:** Integrating LLM-extracted covariates into clinical causal inference.
-  - **Work:** [LLM-Extracted Covariates](https://arxiv.org/abs/2604.16763) (first author, MLHC 2026; NIH Travel Grant).
+
+<div class='exp-box'><div class='exp-logo'><img src='images/logos/yale.png' alt='Yale University'></div>
+<div class='exp-text' markdown="1">
+
+**[Yale University](https://www.yale.edu/)** · Research Intern <span class='exp-date'>May 2026 – Present</span>
+
+*Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University). Full-time May – Aug 2026; part-time since Sep 2026.*
+
+**Focus:** Research agents for scientific discovery, multimodal mental-health modeling, and computer-use agents for science.
+
+**Work:** [LabAgent](https://arxiv.org/abs/2609.13437) (first author, under review at *Nature Machine Intelligence*); [MERID](https://arxiv.org/abs/2609.36235) (co-first author, oral at BEIHAI Summit); [OSWorld-Science](https://arxiv.org/abs/2609.39903) (co-first author, technical report).
+
+**Ongoing:** an AI-hospital benchmark for continual learning; a Qwen3-Omni mental-health world model on UK Biobank; OSWorld-Science V2.0.
+</div>
+</div>
+
+<div class='exp-box'><div class='exp-logo'><img src='images/logos/uw.png' alt='University of Wisconsin–Madison'></div>
+<div class='exp-text' markdown="1">
+
+**[University of Wisconsin–Madison](https://www.wisc.edu/)** · Research Intern (part-time) <span class='exp-date'>Jan 2026 – Present</span>
+
+*Advised by [Prof. Xiao Luo](https://luoxiao12.github.io/).*
+
+**Focus:** Uncertainty quantification for retrieval-augmented generation.
+
+**Work:** GALA (first author, under review).
+</div>
+</div>
+
+<div class='exp-box'><div class='exp-logo'><img src='images/logos/ntu.png' alt='Nanyang Technological University'></div>
+<div class='exp-text' markdown="1">
+
+**[Nanyang Technological University](https://www.ntu.edu.sg/)** · Research Intern (part-time) <span class='exp-date'>Jul 2025 – Sep 2025</span>
+
+*Advised by [Prof. Xinfeng Li](https://letterligo.netlify.app/).*
+
+**Focus:** Permission safety of GUI / computer-use agents under prompt-injection attacks.
+
+**Work:** an OSWorld-based testbed measuring permission violations of commercial and open-source GUI agents.
+</div>
+</div>
+
+<div class='exp-box'><div class='exp-logo'><img src='images/logos/arcadia.png' alt='Arcadia University'></div>
+<div class='exp-text' markdown="1">
+
+**Clinical Causal Inference** · Project Leader <span class='exp-date'>May 2025 – Mar 2026</span>
+
+*National-Level College Students' Innovation and Entrepreneurship Program. Advised by [Prof. Kathy Macropol](https://www.arcadia.edu/faculty-and-staff/katherine-p-macropol/) (Arcadia University).*
+
+**Focus:** Integrating LLM-extracted covariates into clinical causal inference.
+
+**Work:** [LLM-Extracted Covariates](https://arxiv.org/abs/2604.16763) (first author, MLHC 2026; NIH Travel Grant).
+</div>
+</div>
 
 <span class='anchor' id='-academic-services'></span>
 # 🎖 Academic Services

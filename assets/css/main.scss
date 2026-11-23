@@ -141,16 +141,126 @@ h1:before, .anchor:before {
 }
 
 .paper-more {
-    margin: 0.3em 0 0;
+    margin: 0.55em 0 0;
 
     summary {
-        cursor: pointer;
-        color: $link-color;
-        font-size: 0.8em;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45em;
+        padding: 0.12em 0.8em;
+        border: 1px solid mix(#000, $lighter-gray, 10%);
+        border-radius: 1em;
+        background-color: $lighter-gray;
+        color: $text-color;
+        font-size: 0.7em;
         font-weight: 600;
+        line-height: 2.1;
+        cursor: pointer;
+        user-select: none;
+        list-style: none;
+        outline: none;
+        transition: background-color .15s ease, border-color .15s ease, color .15s ease, transform .08s ease;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        i {
+            font-size: 0.85em;
+            transition: transform .2s ease;
+        }
+
+        .pm-open {
+            display: none;
+        }
+
+        &:hover,
+        &:focus-visible {
+            background-color: $link-color;
+            border-color: $link-color;
+            color: #fff;
+        }
+
+        &:active {
+            transform: scale(0.96);
+        }
+    }
+
+    details[open] {
+        summary {
+            .pm-closed {
+                display: none;
+            }
+
+            .pm-open {
+                display: inline;
+            }
+
+            i {
+                transform: rotate(180deg);
+            }
+        }
+
+        p {
+            animation: paper-more-in .25s ease;
+        }
     }
 
     p {
-        margin: 0.5em 0 0;
+        margin: 0.75em 0 0;
+        padding: 0.15em 0 0.15em 0.9em;
+        border-left: 3px solid mix(#fff, $link-color, 60%);
+    }
+}
+
+@keyframes paper-more-in {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.exp-box {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.1em 0;
+    border-bottom: 1px #efefef solid;
+
+    .exp-logo {
+        flex: 0 0 3.6em;
+        margin-right: 1.1em;
+
+        img {
+            display: block;
+            width: 3.6em;
+            height: 3.6em;
+            padding: 0.25em;
+            box-sizing: border-box;
+            border-radius: 0.5em;
+            background-color: #fff;
+            object-fit: contain;
+        }
+    }
+
+    .exp-text {
+        flex: 1 1 0;
+        min-width: 0;
+
+        p {
+            margin: 0 0 0.3em;
+        }
+
+        .exp-date {
+            float: right;
+            margin-left: 1em;
+            color: mix(#fff, $text-color, 35%);
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
     }
 }
