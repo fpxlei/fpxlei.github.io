@@ -167,7 +167,7 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 </div>
 </div>
 
-<div class='exp-box'><div class='exp-logo'><img src='images/logos/uw.png' alt='University of Wisconsin–Madison'></div>
+<div class='exp-box'><div class='exp-logo'><img src='images/logos/uw-crest.png' alt='University of Wisconsin–Madison'></div>
 <div class='exp-text' markdown="1">
 
 **[University of Wisconsin–Madison](https://www.wisc.edu/)** · Research Intern (part-time) <span class='exp-date'>Jan 2026 – Present</span>
