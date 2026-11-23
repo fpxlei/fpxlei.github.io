@@ -12,7 +12,7 @@ redirect_from:
 
 Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.arcadia.edu/) pursuing a double major in **Mathematics** and **Computer Science**. My research focuses on **trustworthy machine learning** for **healthcare** and **scientific discovery**. My goal is to build the next generation of agents and large language models that are not just **capable**, but **causally grounded** and **trustworthy** enough to be genuinely deployed in high-stakes clinical treatment and biological research. In particular, I work on:
 
-- **Uncertainty Quantification**: knowing when an LLM's answer can be trusted, especially in retrieval-augmented generation (GALA).
+- **Uncertainty Quantification**: knowing when an LLM's answer can be trusted, especially in retrieval-augmented generation ([GALA](https://drive.google.com/file/d/1dltNP3V9iz3hY2o44QUmil3sakEqigLY/view)).
 - **Causal Inference for Clinical Data**: turning unstructured clinical notes into confounders for reliable treatment-effect estimation ([MLHC 2026](https://arxiv.org/abs/2604.16763)).
 - **GUI / LLM-based Research Agents**: agents that reproduce, operate, and extend scientific methods and software for clinical and biomedical discovery ([LabAgent](https://arxiv.org/abs/2609.13437), [OSWorld-Science](https://arxiv.org/abs/2609.39903), [MERID](https://arxiv.org/abs/2609.36235)).
 
@@ -129,11 +129,15 @@ A **recursive self-improving multi-agent system** that autonomously searches ove
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='images/pub_gala.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG**
+[Geometric Semantic Exploration with Passage Mixup for Uncertainty Quantification in RAG](https://drive.google.com/file/d/1dltNP3V9iz3hY2o44QUmil3sakEqigLY/view)
 
 **Lei Liu**, Yu Wang, Hang Zhou, Xiao Luo
 
 *Under Review*
+
+<div class="paper-links">
+<a href="https://drive.google.com/file/d/1dltNP3V9iz3hY2o44QUmil3sakEqigLY/view" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Paper</a>
+</div>
 
 Estimates when a RAG answer can be trusted by probing the **geometry of its semantic answer space** with passage mixup.
 
@@ -176,7 +180,7 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 
 **Focus:** Uncertainty quantification for retrieval-augmented generation.
 
-**Work:** GALA (first author, under review).
+**Work:** [GALA](https://drive.google.com/file/d/1dltNP3V9iz3hY2o44QUmil3sakEqigLY/view) (first author, under review).
 </div>
 </div>
 
