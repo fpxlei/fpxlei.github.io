@@ -155,15 +155,26 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 <div class='exp-box'><div class='exp-logo'><img src='images/logos/yale.png' alt='Yale University'></div>
 <div class='exp-text' markdown="1">
 
-**[Yale University](https://www.yale.edu/)** · Research Intern <span class='exp-date'>May 2026 – Present</span>
+**[Yale University](https://www.yale.edu/)** · Research Intern (part-time) <span class='exp-date'>Sep 2026 – Present</span>
 
-*Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University). Full-time May – Aug 2026; part-time since Sep 2026.*
+*Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
 
-**Focus:** Research agents for scientific discovery, multimodal mental-health modeling, and computer-use agents for science.
+**Focus:** AI-hospital simulation, multimodal world models for mental health, and computer-use agents for science.
+
+**Ongoing:** an AI-hospital benchmark for continual learning; MindCare, a Qwen3-Omni mental-health world model on UK Biobank and MIMIC-IV (manuscript in preparation); OSWorld-Science V2.0.
+</div>
+</div>
+
+<div class='exp-box'><div class='exp-logo'><img src='images/logos/yale.png' alt='Yale University'></div>
+<div class='exp-text' markdown="1">
+
+**[Yale University](https://www.yale.edu/)** · Research Intern (full-time) <span class='exp-date'>May 2026 – Aug 2026</span>
+
+*Advised by [Prof. Hongyu Zhao](https://ysph.yale.edu/profile/hongyu-zhao/); co-advised by [Prof. Tianyu Liu](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) (Tsinghua University).*
+
+**Focus:** Research agents for scientific discovery and multimodal mental-health analysis.
 
 **Work:** [LabAgent](https://arxiv.org/abs/2609.13437) (first author, under review at *Nature Machine Intelligence*); [MERID](https://arxiv.org/abs/2609.36235) (co-first author, oral at BEIHAI Summit); [OSWorld-Science](https://arxiv.org/abs/2609.39903) (co-first author, technical report).
-
-**Ongoing:** an AI-hospital benchmark for continual learning; a Qwen3-Omni mental-health world model on UK Biobank; OSWorld-Science V2.0.
 </div>
 </div>
 
