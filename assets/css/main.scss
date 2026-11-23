@@ -264,3 +264,25 @@ h1:before, .anchor:before {
         }
     }
 }
+
+.about-links {
+    margin: 0.2em 0 1.2em;
+
+    a {
+        padding: 0.25em 1.1em;
+        font-size: 0.8em;
+
+        &.primary {
+            border-color: $link-color;
+            background-color: $link-color;
+            color: #fff;
+
+            &:hover,
+            &:focus {
+                border-color: mix(#000, $link-color, 18%);
+                background-color: mix(#000, $link-color, 18%);
+                color: #fff;
+            }
+        }
+    }
+}

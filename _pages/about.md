@@ -18,6 +18,12 @@ Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.a
 
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison and [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) at Yale University, and co-advised by [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Tsinghua University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
+<div class="paper-links about-links">
+<a class="primary" href="https://drive.google.com/file/d/12moMxldpm7PX9n1ySuH1S2CQn-Oy7u3E/view" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Curriculum Vitae</a>
+<a href="mailto:fpxlllei@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+<a href="https://scholar.google.com/citations?user=2mfzTK0AAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
+</div>
+
 # 🔥 News
 - *Nov 2026*: &nbsp;🏅 Received an **NIH Travel Grant** from Johns Hopkins University to present our **MLHC 2026** paper!
 - *Oct 2026*: &nbsp;🎉 **MERID** was selected for an **oral presentation** at the [2nd Beijing Tsinghua Medical AI Forum (BEIHAI Summit)](https://beihai.tsinghua.syhci.cn/index.html)!
@@ -150,9 +156,9 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 </div>
 
 # 📖 Education
-- *Sep 2025 – May 2027*, [**Arcadia University**](https://www.arcadia.edu/) — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
-- *Jul 2026 – Aug 2026*, [**Peking University**](https://english.pku.edu.cn/index.html) (Summer Session Exchange Student) — Instructor: [**Prof. Tiejun Huang**](https://brain-inspired-lab.github.io/members/tiejun-huang)
-- *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) — B.S. in Mathematics and Applied Mathematics. *GPA 4.34/5.00 (WES 3.92/4.00)*
+- *Sep 2025 – May 2027 (expected)*, [**Arcadia University**](https://www.arcadia.edu/) — B.S. in Mathematics and Computer Science. *GPA 3.98/4.00*
+- *Jul 2026 – Aug 2026*, [**Peking University**](https://english.pku.edu.cn/index.html) (Summer School Exchange Student) — Instructor: [**Prof. Tiejun Huang**](https://brain-inspired-lab.github.io/members/tiejun-huang)
+- *Sep 2023 – Jun 2025*, [**Jiangsu University**](https://www.usnews.com/education/best-global-universities/jiangsu-university-501438) (2+2 Joint Program with Arcadia University) — B.S. in Mathematics and Applied Mathematics (expected Jun 2027). *GPA 4.34/5.00 (WES 3.92/4.00)*
 
 # 🔬 Research Experience
 
