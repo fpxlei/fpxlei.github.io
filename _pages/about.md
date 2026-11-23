@@ -218,7 +218,7 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 # 🏆 Honors & Awards
 - *2026* E2B for Startups Program ($20,000 in credits), as founder of [Twinward AI](https://twinward-ai.github.io/)
 - *2025 – 2026* Dean's Distinguished Honor List, Arcadia University (Fall 2025, Spring 2026)
-- *2025* Arcadia University President's Scholarship ($56,000 total)
+- *2025* Presidential Award, Arcadia University ($56,000 total)
 - *2025* National Second Prize, National University Student Statistical Modeling Competition (top 0.9%)
 - *2025* National Innovation and Entrepreneurship Project Funding, Ministry of Education (CNY 8,000)
 - *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
