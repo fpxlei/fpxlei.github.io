@@ -50,6 +50,7 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2604.16763" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+<a href="https://drive.google.com/file/d/1FUmzI3S4kNNylLFW4R7TkBv7l9sCH7HA/view" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
 </div>
 
 Folding **LLM-extracted confounders** from clinical notes into the propensity model substantially revises sepsis treatment-effect estimates on 21,859 MIMIC-IV patients.
@@ -75,6 +76,7 @@ Folding **LLM-extracted confounders** from clinical notes into the propensity mo
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.13437" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+<a href="https://drive.google.com/file/d/1Ay1fbF0ZTmk6n8gXSIBOLlavl6S-W9Kr/view" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
 </div>
 
 Turns a lab's papers, code, and tutorials into **reproduction-verified executable skills**, so AI agents can both reproduce and extend published biomedical methods.
@@ -120,6 +122,8 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 
 <div class="paper-links">
 <a href="https://arxiv.org/abs/2609.36235" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
+<a href="https://drive.google.com/file/d/1KT1F1vYjFFLnkxf0fJ7iIGheudrh6vkm/view" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
+<a href="https://drive.google.com/file/d/1SLFIW7G2HYXMK1bk9aaDvjpLTV4fI6A5/view" target="_blank" rel="noopener"><i class="fas fa-chalkboard"></i>Slides</a>
 </div>
 
 A **recursive self-improving multi-agent system** that autonomously searches over features, modalities, and learners for major depression detection.
