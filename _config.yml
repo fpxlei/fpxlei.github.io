@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Lei Liu"
-description              : "Uncertainty quantification & LLM agents for clinical and biomedical applications."
+description              : "Trustworthy machine learning for healthcare and scientific discovery."
 repository               : "fpxlei/fpxlei.github.io"
 google_scholar_stats_use_cdn : true
 
