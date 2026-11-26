@@ -106,6 +106,12 @@ Dingyuan Dai\*, Heli Qi\*, **Lei Liu**\*, Yinxi Li\*, Baiding Chen\*, Zijun Dou\
 </div>
 
 **OSWorld-Science** is a benchmark for computer-use agents that learn and operate real scientific software, extending the OSWorld setting to the tools that day-to-day scientific work actually runs on.
+
+<div class="paper-more">
+<details><summary><span class="pm-closed">Read more</span><span class="pm-open">Show less</span><i class="fas fa-chevron-down"></i></summary>
+<p>Scientific software is a demanding test for computer-use agents: completing a research workflow means interpreting specialized interfaces, manipulating scientific objects, and producing verifiable results. <strong>OSWorld-Science</strong> provides <strong>146 tasks</strong> developed through expert proposals and iterative human-AI co-design, covering workflows such as molecular drawing and retrosynthesis, pathology image analysis, statistical computing, and physical simulation. Task-specific, execution-based evaluators inspect application states and generated artifacts (molecular structures, segmentation masks, plots, numerical results) and award partial credit. Across <strong>12 VLMs</strong>, even state-of-the-art models with a strong harness still struggle with these scientific workflows.</p>
+</details>
+</div>
 </div>
 </div>
 
