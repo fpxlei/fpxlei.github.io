@@ -44,11 +44,12 @@ I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/
 
 **Lei Liu**, Jialin Chen, Kathy Macropol
 
-*Machine Learning for Healthcare (MLHC) 2026*
+*Machine Learning for Healthcare (MLHC) 2026, PMLR 340:1178–1207*
 
 🏅 **NIH Travel Grant**, awarded by Johns Hopkins University to present this work at MLHC 2026.
 
 <div class="paper-links">
+<a href="https://proceedings.mlr.press/v340/liu26b.html" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Paper</a>
 <a href="https://arxiv.org/abs/2604.16763" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>arXiv</a>
 <a href="https://drive.google.com/file/d/1FUmzI3S4kNNylLFW4R7TkBv7l9sCH7HA/view" target="_blank" rel="noopener"><i class="fas fa-image"></i>Poster</a>
 </div>
