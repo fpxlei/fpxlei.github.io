@@ -19,7 +19,7 @@ Hi! I'm **Lei Liu** (刘磊), a senior at [**Arcadia University**](https://www.a
 I'm fortunate to be advised by [**Prof. Xiao Luo**](https://luoxiao12.github.io/) at the University of Wisconsin–Madison and [**Prof. Hongyu Zhao**](https://ysph.yale.edu/profile/hongyu-zhao/) at Yale University, and co-advised by [**Prof. Tianyu Liu**](https://collegeai.tsinghua.edu.cn/en/People/Full_time_PI/Tianyu_LIU.htm) at Tsinghua University. **I am actively looking for a PhD position starting in Fall 2027 — feel free to reach out!**
 
 <div class="paper-links about-links">
-<a href="https://drive.google.com/file/d/12moMxldpm7PX9n1ySuH1S2CQn-Oy7u3E/view" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Curriculum Vitae</a>
+<a href="https://fpxlei.github.io/files/Lei_Liu_CV.pdf" target="_blank" rel="noopener"><i class="fas fa-file-alt"></i>Curriculum Vitae</a>
 <a href="mailto:fpxlllei@gmail.com"><i class="fas fa-envelope"></i>Email</a>
 <a href="https://scholar.google.com/citations?user=2mfzTK0AAAAJ" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
 </div>
