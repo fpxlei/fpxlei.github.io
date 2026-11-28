@@ -239,6 +239,6 @@ Estimates when a RAG answer can be trusted by probing the **geometry of its sema
 - *2025* National Second Prize, National University Student Statistical Modeling Competition (top 0.9%)
 - *2025* National Innovation and Entrepreneurship Project Funding, Ministry of Education (CNY 8,000)
 - *2024* Silver Medal, Chinese Mathematical Olympiad for University Students
-- *2024* National First Prize, Chinese Undergraduate Physics Experiment Competition (CUPEC, top 14%)
+- *2024* National First Prize, Chinese Undergraduate Physics Experiment Competition (CUPEC, top 3%)
 
 
